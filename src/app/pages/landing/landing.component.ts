@@ -1,17 +1,12 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { LanguageButtonComponent } from '../../components/language-button/language-button.component';
 
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, LanguageButtonComponent],
   templateUrl: './landing.component.html',
 })
-export class LandingComponent {
-  private translate = inject(TranslateService);
-
-  changeLang(lang: string) {
-    this.translate.use(lang);
-  }
-}
+export class LandingComponent {}

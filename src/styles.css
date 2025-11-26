@@ -26,3 +26,7 @@
   --color-primary-950: #01102d;
   --color-primary: var(--color-primary-900);
 }
+
+button {
+  @apply cursor-pointer;
+}
