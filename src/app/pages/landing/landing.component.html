@@ -1,4 +1,18 @@
+<div class="fixed top-4 right-4 z-50 flex gap-2">
+  <button
+    (click)="changeLang('es')"
+    class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 text-sm font-medium"
+  >
+    ES
+  </button>
+  <button
+    (click)="changeLang('en')"
+    class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 text-sm font-medium"
+  >
+    EN
+  </button>
+</div>
 <div class="min-h-screen bg-gray-50 flex flex-col justify-center items-center">
-  <h1 class="text-4xl font-bold text-gray-900 mb-4 font-sans">Bienvenido a Tymon</h1>
-  <p class="text-lg text-gray-600">Tu landing page está lista.</p>
+  <h1 class="text-4xl font-bold text-gray-900 mb-4 font-sans">{{ 'HELLO' | translate }}</h1>
+  <p class="text-lg text-gray-600">{{ 'CHANGE_LANGUAGE' | translate }}</p>
 </div>

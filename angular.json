@@ -25,7 +25,12 @@
               },
               "src/assets"
             ],
-            "styles": ["src/styles.css"]
+            "styles": [
+              "src/styles.css"
+            ],
+            "polyfills": [
+              "@angular/localize/init"
+            ]
           },
           "configurations": {
             "production": {
