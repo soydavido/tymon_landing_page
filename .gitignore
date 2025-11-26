@@ -1,0 +1,78 @@
+# Root ignore for monorepo (Angular + NestJS)
+
+# Node
+node_modules/
+**/node_modules/
+
+# Build outputs
+/dist/
+**/dist/
+/build/
+**/build/
+/out-tsc/
+**/out-tsc/
+/tmp/
+**/tmp/
+/.angular/
+**/.angular/
+/bazel-out/
+**/bazel-out/
+/coverage/
+**/coverage/
+
+# Logs
+logs/
+**/logs/
+*.log
+**/*.log
+
+# Environment files
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Allow example env files
+!.env.example
+!**/.env.example
+!.env.*.example
+!**/.env.*.example
+
+# IDEs and editors
+.vscode/
+**/.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+**/.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Misc
+.sass-cache/
+/connect.lock
+/libpeerconnection.log
+/testem.log
+/typings
+
+# Nest specific
+.nyc_output
+**/.nyc_output
+.temp
+.tmp
+**/.temp
+**/.tmp
+
+# Cache
+.history/
+**/.history/
