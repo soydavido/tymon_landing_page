@@ -11,3 +11,18 @@
   font-style: normal;
   font-display: swap;
 }
+
+@theme {
+  --color-primary-50: #f2f5ff;
+  --color-primary-100: #e7ecff;
+  --color-primary-200: #d1daff;
+  --color-primary-300: #acbaff;
+  --color-primary-400: #7e8fff;
+  --color-primary-500: #4a57ff;
+  --color-primary-600: #2529ff;
+  --color-primary-700: #1314ee;
+  --color-primary-800: #0f0fc8;
+  --color-primary-900: #0e0e9b;
+  --color-primary-950: #01102d;
+  --color-primary: var(--color-primary-900);
+}
