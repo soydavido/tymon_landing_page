@@ -1,4 +1,24 @@
 {
-  "HELLO": "Hello world",
-  "CHANGE_LANGUAGE": "Change Language"
+  "header": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "downloadNow": "Download now",
+    "login": "Login"
+  },
+  "titleSection": {
+    "appName": "Tymon",
+    "description": "It is the app that puts your finances on autopilot so you can take control of your money without stress",
+    "slogan": "your route to success.",
+    "welcome": "Welcome!",
+    "usernamePlaceholder": "Username",
+    "passwordPlaceholder": "Password",
+    "forgotPassword": "Forgot your password?",
+    "troubleLoggingIn": "Having trouble?",
+    "loginButton": "Login",
+    "noAccount": "Don't have an account?",
+    "register": "Sign up!",
+    "financesUnderControl": "Your <span class=\"font-bold\">finances</span><br>under your command",
+    "totalBalance": "Total Balance"
+  }
 }

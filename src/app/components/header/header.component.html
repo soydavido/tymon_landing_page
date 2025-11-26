@@ -1,0 +1,24 @@
+<header class="flex justify-between items-center px-8 py-6 w-full z-50">
+  <div class="flex items-center gap-2">
+    <img src="logo/white-vertical-logo.svg" alt="Tymon Logo" class="h-18 w-auto" />
+  </div>
+
+  <nav class="hidden md:flex gap-8 text-gray-300 text-lg font-medium">
+    <a href="#" class="hover:text-white transition-colors">{{ 'header.home' | translate }}</a>
+    <a href="#" class="hover:text-white transition-colors">{{ 'header.features' | translate }}</a>
+    <a href="#" class="hover:text-white transition-colors">{{ 'header.pricing' | translate }}</a>
+  </nav>
+
+  <div class="flex items-center gap-4">
+    <button
+      class="bg-white text-primary-950 px-6 py-2 rounded-lg text-sm font-bold hover:bg-gray-100 transition-colors"
+    >
+      {{ 'header.downloadNow' | translate }}
+    </button>
+    <button
+      class="border border-white text-white px-6 py-2 rounded-lg text-sm font-bold hover:bg-white/10 transition-colors"
+    >
+      {{ 'header.login' | translate }}
+    </button>
+  </div>
+</header>

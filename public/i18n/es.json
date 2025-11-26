@@ -1,4 +1,12 @@
 {
-  "HELLO": "Hola mundo",
-  "CHANGE_LANGUAGE": "Cambiar Idioma"
+  "header": {
+    "home": "Inicio",
+    "features": "Funcionalidades",
+    "pricing": "Precios",
+    "downloadNow": "Descargar ahora",
+    "login": "Login"
+  },
+  "titleSection": {
+    "description": "Es la app que pone tus finanzas en piloto automático para que tomes el control de tu dinero sin estrés"
+  }
 }
