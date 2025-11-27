@@ -20,5 +20,61 @@
     "register": "Sign up!",
     "financesUnderControl": "Your <span class=\"font-bold\">finances</span><br>under your command",
     "totalBalance": "Total Balance"
+  },
+  "iaProyectionChart": {
+    "title": "Planifica, controla y ahorra sin complicaciones",
+    "subtitle": "Finanzas simples, decisiones inteligentes",
+    "chartTitle": "Proyección Ahorro con IA"
+  },
+  "tymonSteps": {
+    "title": "How Tymon works in 4 steps",
+    "subtitle": "The navigation system",
+    "step1": "<span class=\"font-bold\">Hassle-free</span> registration",
+    "step2": "<span class=\"font-bold\">Your</span> accounts in one place",
+    "step3": "<span class=\"font-bold\">Effortless</span> automation",
+    "step4": "<span class=\"font-bold\">Reach</span> your financial goals"
+  },
+  "differentiators": {
+    "title": "What makes us different",
+    "feature1": {
+      "badge": "Total Automation",
+      "description": "While other apps require effort, Tymon does it all for you automatically."
+    },
+    "feature2": {
+      "badge": "Real Multibanking",
+      "description": "Integrate your bank accounts in a single swipe."
+    },
+    "feature3": {
+      "badge": "Exclusive Marketplace",
+      "description": "Exclusive benefits and financial services to elevate the way you use your money."
+    }
+  },
+  "cta": {
+    "title": "Your finances, under your command",
+    "description": "Live differently. Create your future. Your financial freedom starts today",
+    "badge1": "More peace of mind",
+    "badge2": "More control",
+    "badge3": "Smart savings",
+    "badge4": "Total security",
+    "badge5": "Simplicity"
+  },
+  "financialControl": {
+    "title": "Your financial control center",
+    "description": "Connect all your accounts, visualize your expenses, and make smart decisions from one place.",
+    "leftPanel": {
+      "dashboard": "Dashboard",
+      "courses": "Courses",
+      "goals": "Goals"
+    },
+    "rightPanel": {
+      "budget": "Budget",
+      "transactions": "Transactions",
+      "accounts": "Accounts"
+    },
+    "badges": {
+      "realTime": "Real time",
+      "smartAlerts": "Smart alerts",
+      "expenseCalc": "Expense calculator"
+    }
   }
 }

@@ -8,5 +8,61 @@
   },
   "titleSection": {
     "description": "Es la app que pone tus finanzas en piloto automático para que tomes el control de tu dinero sin estrés"
+  },
+  "iaProyectionChart": {
+    "title": "Planifica, controla y ahorra sin complicaciones",
+    "subtitle": "Finanzas simples, decisiones inteligentes",
+    "chartTitle": "Proyección Ahorro con IA"
+  },
+  "tymonSteps": {
+    "title": "Cómo funciona Tymon en 4 pasos",
+    "subtitle": "El sistema de navegación",
+    "step1": "<span class=\"font-bold\">Registro</span> sin complicaciones",
+    "step2": "<span class=\"font-bold\">Tus cuentas</span> en un solo lugar",
+    "step3": "<span class=\"font-bold\">Automatización</span> sin esfuerzo",
+    "step4": "<span class=\"font-bold\">Alcanza</span> tus metas financieras"
+  },
+  "differentiators": {
+    "title": "Lo que nos hace diferentes",
+    "feature1": {
+      "badge": "Automatización total",
+      "description": "Mientras otras apps requieren esfuerzo, Tymon lo hace todo por ti automáticamente."
+    },
+    "feature2": {
+      "badge": "Multibanca real",
+      "description": "Integra tus cuentas bancarias en un solo swipe."
+    },
+    "feature3": {
+      "badge": "Marketplace exclusivo",
+      "description": "Beneficios exclusivos y servicios financieros para elevar la forma en que usas tu dinero."
+    }
+  },
+  "cta": {
+    "title": "Tus finanzas, bajo tu mando",
+    "description": "Vive diferente. Crea tu futuro. Tu libertad financiera empieza hoy",
+    "badge1": "Más tranquilidad",
+    "badge2": "Más control",
+    "badge3": "Ahorro inteligente",
+    "badge4": "Seguridad total",
+    "badge5": "Facilidad"
+  },
+  "financialControl": {
+    "title": "Tu centro de control financiero",
+    "description": "Conecta todas tus cuentas, visualiza tus gastos y toma decisiones inteligentes desde un solo lugar.",
+    "leftPanel": {
+      "dashboard": "Dashboard",
+      "courses": "Cursos",
+      "goals": "Metas"
+    },
+    "rightPanel": {
+      "budget": "Presupuesto",
+      "transactions": "Transacciones",
+      "accounts": "Cuentas"
+    },
+    "badges": {
+      "realTime": "Tiempo real",
+      "smartAlerts": "Alertas inteligentes",
+      "expenseCalc": "Calculadora de gastos"
+    }
   }
 }

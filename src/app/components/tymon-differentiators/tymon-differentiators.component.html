@@ -1,0 +1,226 @@
+<section class="w-full py-20 px-4 md:px-8 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Title -->
+    <h2 class="text-4xl md:text-5xl font-bold text-center text-primary-950 mb-20">
+      {{ 'differentiators.title' | translate }}
+    </h2>
+
+    <div class="space-y-24">
+      <!-- Feature 1: Automation (Left Image, Right Text) -->
+      <div class="flex flex-col md:flex-row items-start gap-12 md:gap-0 group">
+        <!-- Graphic -->
+        <div class="flex-1 flex justify-center md:justify-end w-full">
+          <div
+            class="relative w-80 h-80 bg-gray-50 rounded-3xl flex items-center justify-center shadow-sm z-10 transition-transform duration-500 group-hover:scale-105"
+          >
+            <!-- Dashed Cross Lines -->
+            <div
+              class="absolute top-10 bottom-10 left-1/2 w-px border-l border-dashed border-gray-300 -translate-x-1/2"
+            ></div>
+            <div
+              class="absolute left-10 right-10 top-1/2 h-px border-t border-dashed border-gray-300 -translate-y-1/2"
+            ></div>
+
+            <!-- Dashed Circle Line -->
+            <div
+              class="absolute inset-0 m-15 border border-dashed border-gray-300 rounded-full opacity-60 animate-spin-slow"
+            ></div>
+
+            <!-- Central Icon -->
+            <div
+              class="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center z-10 animate-pulse-soft"
+            >
+              <div
+                class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center"
+              >
+                <span class="material-icons text-primary-950 text-4xl">all_inclusive</span>
+              </div>
+            </div>
+            <!-- Orbiting Icons -->
+            <div
+              class="absolute top-10 left-1/2 -translate-x-1/2 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float"
+            >
+              <span class="material-icons text-primary-950 text-base">savings</span>
+            </div>
+            <div
+              class="absolute bottom-10 left-1/2 -translate-x-1/2 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float"
+            >
+              <span class="material-icons text-primary-950 text-base">bar_chart</span>
+            </div>
+            <div
+              class="absolute left-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float-reverse"
+            >
+              <span class="material-icons text-primary-950 text-base">sync</span>
+            </div>
+            <div
+              class="absolute right-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float-reverse"
+            >
+              <span class="material-icons text-primary-950 text-base">account_balance_wallet</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connector Line (Desktop only) -->
+        <div class="hidden md:block w-70 border-t-2 border-dashed border-primary-950 mt-22"></div>
+
+        <!-- Text Content -->
+        <div class="flex-1 text-center md:text-left md:mt-16">
+          <div
+            class="inline-block bg-primary-950 text-white px-8 py-3 rounded-full text-base font-bold mb-8"
+          >
+            {{ 'differentiators.feature1.badge' | translate }}
+          </div>
+          <p class="text-2xl md:text-3xl text-gray-700 font-medium leading-relaxed max-w-xl">
+            {{ 'differentiators.feature1.description' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 2: Multibanking (Right Image, Left Text) -->
+      <div class="flex flex-col md:flex-row-reverse items-start gap-12 md:gap-0 group">
+        <!-- Graphic -->
+        <div class="flex-1 flex justify-center md:justify-start w-full">
+          <div
+            class="relative w-80 h-80 bg-gray-50 rounded-3xl flex items-center justify-center shadow-sm z-10 overflow-hidden transition-transform duration-500 group-hover:scale-105"
+          >
+            <!-- Dashed X Lines -->
+            <div
+              class="absolute top-1/2 left-1/2 w-[85%] h-px border-t border-dashed border-gray-300 -translate-x-1/2 -translate-y-1/2 rotate-45"
+            ></div>
+            <div
+              class="absolute top-1/2 left-1/2 w-[85%] h-px border-t border-dashed border-gray-300 -translate-x-1/2 -translate-y-1/2 -rotate-45"
+            ></div>
+
+            <!-- Central Icon -->
+            <div
+              class="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center z-10 animate-pulse-soft"
+            >
+              <div
+                class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center"
+              >
+                <span class="material-icons text-primary-950 text-4xl">account_balance</span>
+              </div>
+            </div>
+            <!-- Orbiting Icons -->
+            <div
+              class="absolute top-10 right-10 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float"
+            >
+              <span class="material-icons text-primary-950 text-base">attach_money</span>
+            </div>
+            <div
+              class="absolute bottom-10 left-10 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float"
+            >
+              <span class="material-icons text-primary-950 text-base">currency_bitcoin</span>
+            </div>
+            <div
+              class="absolute top-10 left-10 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float-reverse"
+            >
+              <span class="material-icons text-primary-950 text-base">euro</span>
+            </div>
+            <div
+              class="absolute bottom-10 right-10 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float-reverse"
+            >
+              <span class="material-icons text-primary-950 text-base">credit_card</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connector Line (Desktop only) -->
+        <div class="hidden md:block w-70 border-t-2 border-dashed border-primary-950 mt-22"></div>
+
+        <!-- Text Content -->
+        <div class="flex-1 text-center md:text-right md:mt-16">
+          <div
+            class="inline-block bg-primary-950 text-white px-8 py-3 rounded-full text-base font-bold mb-8"
+          >
+            {{ 'differentiators.feature2.badge' | translate }}
+          </div>
+          <p
+            class="text-2xl md:text-3xl text-gray-700 font-medium leading-relaxed max-w-xl ml-auto"
+          >
+            {{ 'differentiators.feature2.description' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 3: Marketplace (Left Image, Right Text) -->
+      <div class="flex flex-col md:flex-row items-start gap-12 md:gap-0 group">
+        <!-- Graphic -->
+        <div class="flex-1 flex justify-center md:justify-end w-full">
+          <div
+            class="relative w-80 h-80 bg-gray-50 rounded-3xl flex items-center justify-center shadow-sm z-10 transition-transform duration-500 group-hover:scale-105"
+          >
+            <!-- Lines -->
+            <!-- Vertical Line -->
+            <div
+              class="absolute top-24 bottom-12 left-1/2 w-px border-l border-dashed border-gray-300 -translate-x-1/2"
+            ></div>
+            <!-- Horizontal Middle Line -->
+            <div
+              class="absolute top-1/2 left-20 right-20 h-px border-t border-dashed border-gray-300 -translate-y-1/2"
+            ></div>
+            <!-- Horizontal Bottom Line -->
+            <div
+              class="absolute bottom-12 left-12 right-12 h-px border-t border-dashed border-gray-300"
+            ></div>
+
+            <!-- Top Icon (Main) -->
+            <div
+              class="absolute top-6 left-1/2 -translate-x-1/2 w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center z-10 animate-pulse-soft"
+            >
+              <div
+                class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center"
+              >
+                <span class="material-icons text-primary-950 text-4xl">storefront</span>
+              </div>
+            </div>
+
+            <!-- Middle Row Icons -->
+            <div
+              class="absolute top-1/2 left-14 -translate-y-1/2 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float"
+            >
+              <span class="material-icons text-primary-950 text-base">language</span>
+            </div>
+            <div
+              class="absolute top-1/2 right-14 -translate-y-1/2 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float"
+            >
+              <span class="material-icons text-primary-950 text-base">store</span>
+            </div>
+
+            <!-- Bottom Row Icons -->
+            <div
+              class="absolute bottom-6 left-6 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float-reverse"
+            >
+              <span class="material-icons text-primary-950 text-base">account_balance</span>
+            </div>
+            <div
+              class="absolute bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float-reverse"
+            >
+              <span class="material-icons text-primary-950 text-base">shopping_cart</span>
+            </div>
+            <div
+              class="absolute bottom-6 right-6 w-12 h-12 bg-gray-100 rounded-full shadow-sm flex items-center justify-center z-10 animate-float-reverse"
+            >
+              <span class="material-icons text-primary-950 text-base">credit_card</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connector Line (Desktop only) -->
+        <div class="hidden md:block w-70 border-t-2 border-dashed border-primary-950 mt-22"></div>
+
+        <!-- Text Content -->
+        <div class="flex-1 text-center md:text-left md:mt-16">
+          <div
+            class="inline-block bg-primary-950 text-white px-8 py-3 rounded-full text-base font-bold mb-8"
+          >
+            {{ 'differentiators.feature3.badge' | translate }}
+          </div>
+          <p class="text-2xl md:text-3xl text-gray-700 font-medium leading-relaxed max-w-xl">
+            {{ 'differentiators.feature3.description' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
