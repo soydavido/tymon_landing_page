@@ -48,7 +48,7 @@
   },
   "financialControl": {
     "title": "Tu centro de control financiero",
-    "description": "Conecta todas tus cuentas, visualiza tus gastos y toma decisiones inteligentes desde un solo lugar.",
+    "description": "Conecta todos los aspectos de tu vida financiera en un solo ecosistema inteligente.",
     "leftPanel": {
       "dashboard": "Dashboard",
       "courses": "Cursos",
@@ -60,9 +60,178 @@
       "accounts": "Cuentas"
     },
     "badges": {
-      "realTime": "Tiempo real",
-      "smartAlerts": "Alertas inteligentes",
-      "expenseCalc": "Calculadora de gastos"
+      "realTime": "Tiempo Real",
+      "smartAlerts": "Alertas Inteligentes",
+      "expenseCalc": "Cálculo de Gastos"
+    }
+  },
+  "keyModules": {
+    "title": "Módulos clave",
+    "subtitle": "Navega tus finanzas",
+    "dashboard": "Dashboard",
+    "courses": "Cursos",
+    "goals": "Metas",
+    "budget": "Presupuesto",
+    "transactions": "Transacciones",
+    "accounts": "Cuentas"
+  },
+  "expenseIncomeEvolution": {
+    "title": "Evolución Ingresos/Gastos",
+    "card1": {
+      "badge": "Dashboard",
+      "description": "Ofrece una vista panorámica de tu salud económica, incluyendo la evolución de ingresos vs. gastos, resumen de saldos y alertas clave."
+    },
+    "card2": {
+      "badge": "Cursos y educación",
+      "description": "Módulo de educación financiera para mejorar tu toma de decisiones y conocimiento.",
+      "keyTopics": "Temas clave: deuda, inversión básica, ahorro estratégico y planificación.",
+      "curatedContent": "Contenido curado: lecciones concisas y prácticas aplicables a tu realidad."
+    },
+    "card3": {
+      "badge": "Metas financieras",
+      "description": "Planifica y ahorra de forma estructurada para objetivos a corto o largo plazo.",
+      "calculator": "Calculadora de ahorro: determina cuánto necesitas ahorrar semanal/mensualmente.",
+      "progress": "Seguimiento de Progreso: visualiza tu avance hacia cada meta."
+    },
+    "card4": {
+      "badge": "Presupuesto",
+      "description": "Asigna tus límites de gasto en categorías específicas y evita desviaciones.",
+      "point1": "Presupuestos Personalizados: Crea planes mensuales o por evento.",
+      "point2": "Alertas de Exceso: Notificaciones cuando te acercas a tu límite."
+    },
+    "card5": {
+      "badge": "Transacciones",
+      "description": "Registro detallado y automatizado de todos tus movimientos de dinero.",
+      "point1": "Categorización automática: clasifica gastos e ingresos sin tu intervención.",
+      "point2": "Búsqueda avanzada: filtra movimientos por fecha, monto, o comercio."
+    },
+    "card6": {
+      "badge": "Cuentas",
+      "description": "Centraliza la información de todas tus cuentas bancarias y productos financieros.",
+      "point1": "Multibanca: conexión automática con múltiples instituciones.",
+      "point2": "Visión de patrimonio: saldo consolidado de todas tus tenencias."
+    }
+  },
+  "testimonials": {
+    "quote": "Tymon nació de una idea simple: tu dinero merece ser manejado de manera inteligente, no estresante. Nuestra app ayuda a cada usuario a ver cómo crece su dinero, ahorrar sin esfuerzo y tomar decisiones con total confianza.",
+    "quote2": "Desde que uso Tymon, tengo el control total de mis gastos. La automatización me ha ahorrado horas de trabajo manual y ahora puedo enfocarme en mis metas de ahorro.",
+    "quote3": "Increíble herramienta. La integración con mis bancos fue súper sencilla y las proyecciones de IA me han ayudado a planificar mis vacaciones sin endeudarme.",
+    "stat1": {
+      "title": "+5 horas mensuales",
+      "description": "Recupera tiempo para lo que importa."
+    },
+    "stat2": {
+      "title": "Hasta un 20% de ahorro",
+      "description": "Toma decisiones más inteligentes con insights y proyecciones."
+    },
+    "stat3": {
+      "title": "Protección Bank-Level",
+      "description": "Tus datos están seguros con nuestro cifrado de grado bancario."
+    }
+  },
+  "multiDevice": {
+    "badge": "Multi-plataforma",
+    "title": "Tu control financiero,",
+    "titleHighlight": "donde quiera que estés.",
+    "description": "No importa si estás en tu escritorio, en el sofá con tu tablet o en movimiento con tu celular. Tymon se adapta perfectamente a cualquier pantalla para que nunca pierdas de vista tus objetivos.",
+    "feature1Title": "Sincronización Instantánea",
+    "feature1Desc": "Tus datos se actualizan en tiempo real en todos tus dispositivos.",
+    "feature2Title": "Seguridad Unificada",
+    "feature2Desc": "Acceso seguro con biometría en móvil y encriptación de grado bancario."
+  },
+  "manageFinances": {
+    "titleLine1": "Dirige",
+    "titleLine2": "tus",
+    "titleLine3": "finanzas",
+    "descriptionPart1": "Con",
+    "descriptionPart2": ", gestiona tus finanzas personales de forma simple e inteligente. Todo en un solo lugar."
+  },
+  "pricePlans": {
+    "title": "Planes y precios",
+    "subtitle": "Tymon se adapta a tu estilo de vida. Empieza gratis y desbloquea la experiencia completa cuando quieras.",
+    "toggle": {
+      "freeLabel": "7 días para ti",
+      "freeTag": "Gratis",
+      "monthly": "Mensual",
+      "premiumLabel": "Premium",
+      "premiumOff": "20% OFF",
+      "annualLabel": "Anual",
+      "annualOff": "30% OFF"
+    },
+    "free": {
+      "badge": "Ideal para empezar",
+      "title": "Free",
+      "price": "Gratis",
+      "period": "Para siempre",
+      "features": {
+        "manual": "Registro manual de gastos",
+        "overview": "Vista general de gastos",
+        "marketplace": "Acceso básico al marketplace",
+        "multibanking": "Multibanca real",
+        "savings": "Ahorro automático"
+      }
+    },
+    "premium": {
+      "badge": "Automatización total",
+      "title": "Premium",
+      "price": "$7",
+      "periodShort": "/ mes",
+      "periodLong": "Por mes",
+      "cta": "¡Pruébalo 14 Días Gratis!",
+      "features": {
+        "unlimited": "Multibanca real ilimitada",
+        "reports": "Reportes inteligentes",
+        "savings": "**Ahorro automático**",
+        "alerts": "Alertas y beneficios exclusivos",
+        "education": "Educación financiera completa"
+      }
+    },
+    "annual": {
+      "badge": "Libertad Financiera",
+      "title": "Anual",
+      "price": "$60",
+      "periodShort": "/ año",
+      "periodLong": "(2 meses gratis)",
+      "cta": "Seleccionar Anual",
+      "features": {
+        "allPremium": "Todo el plan Premium",
+        "support": "Soporte prioritario 24/7",
+        "gift": "2 meses de regalo",
+        "earlyAccess": "Acceso anticipado a funciones",
+        "challenges": "Retos exclusivos"
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "security": {
+      "title": "Seguridad y privacidad",
+      "q1": "¿Tymon es una app segura?",
+      "a1": "Sí. Usamos cifrado de nivel bancario AES-256 y cumplimos con estándares internacionales. Tu información es confidencial y solo tú tienes acceso a ella.",
+      "q2": "¿Cómo se conecta Tymon a mis bancos?",
+      "a2": "Utilizamos una API de consolidación segura, siguiendo los estándares de la banca digital global. Esto solo nos permite leer tus saldos y movimientos, nunca transferir o manejar fondos."
+    },
+    "multibanking": {
+      "title": "Funcionalidad multibanca",
+      "q1": "¿Puedo conectar varios bancos?",
+      "a1": "Por supuesto. Tymon es una plataforma multibanca real que integra todas tus cuentas y tarjetas, mostrando todos tus saldos y movimientos en tiempo real.",
+      "q2": "¿Funciona con cuentas en divisas?",
+      "a2": "Sí. Tymon consolida saldos en Bs. y USD (e incluso otras divisas con el plan Pro), aplicando la tasa oficial del BCV o una tasa de mercado preseleccionada por ti para una visión unificada."
+    },
+    "beginners": {
+      "title": "Uso y asistencia para principiantes",
+      "q1": "¿Qué pasa si no sé de finanzas?",
+      "a1": "No pasa nada. Tymon es tu asistente financiero. Te guía con alertas, educación financiera práctica y recomendaciones personalizadas sobre cuándo ahorrar o ajustar tu presupuesto."
+    },
+    "plans": {
+      "title": "Planes y pruebas",
+      "q1": "¿Puedo probar la versión Premium?",
+      "a1": "Claro. Tienes 14 días gratis (sin compromiso de tarjeta) para explorar todas las funciones de automatización, multibanca y reportes inteligentes."
+    },
+    "automation": {
+      "title": "Automatización y ahorro inteligente",
+      "q1": "¿Qué hace exactamente la IA para ahorrar?",
+      "a1": "Analiza tus patrones de gasto, identifica periodos de superávit (días en los que gastas menos de lo proyectado) y realiza \"microlanzamientos\" de dinero hacia tus metas, asegurando que nunca afecte tus gastos esenciales."
     }
   }
 }

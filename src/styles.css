@@ -154,3 +154,29 @@ button {
   mask-size: 200% 200%;
   animation: electricity-flow 2s ease-in-out infinite alternate;
 }
+
+@keyframes wave-drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 30px;
+  }
+}
+
+.animate-wave-drift {
+  animation: wave-drift 4s linear infinite;
+}
+
+@keyframes shine-wave {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-15deg);
+  }
+}
+
+.animate-shine-wave {
+  animation: shine-wave 8s ease-in-out infinite;
+}

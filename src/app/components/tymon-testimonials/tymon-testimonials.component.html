@@ -1,0 +1,171 @@
+<section class="w-full py-20 px-4 md:px-8 bg-white">
+  <div class="max-w-7xl mx-auto space-y-20">
+    <!-- Testimonials Carousel Section -->
+    <div
+      class="relative bg-primary-950 rounded-[3rem] p-8 md:p-16 overflow-hidden min-h-[500px] flex flex-col items-center justify-center"
+    >
+      <!-- Background Pattern (Dotted Map Simulation) -->
+      <div class="absolute inset-0 pointer-events-none">
+        <!-- Moving Wave Dots -->
+        <div
+          class="absolute inset-0 bg-[radial-gradient(#ffffff_2px,transparent_2px)] [background-size:30px_30px] opacity-80 animate-wave-drift"
+        ></div>
+
+        <!-- Shine Wave Effect -->
+        <div
+          class="absolute inset-0 bg-linear-to-r from-transparent via-white/5 to-transparent w-[200%] -translate-x-1/2 animate-shine-wave"
+        ></div>
+
+        <!-- Vignette -->
+        <div
+          class="absolute inset-0 bg-linear-to-b from-primary-950 via-transparent to-primary-950"
+        ></div>
+        <div
+          class="absolute inset-0 bg-linear-to-r from-primary-950 via-transparent to-primary-950"
+        ></div>
+      </div>
+
+      <!-- Carousel Container -->
+      <div
+        class="relative z-10 w-full max-w-6xl mx-auto h-[400px] flex items-center justify-center"
+      >
+        <div
+          *ngFor="let testimonial of testimonials; let i = index"
+          class="absolute transition-all duration-500 ease-in-out"
+          [ngClass]="getPositionClass(i)"
+          (click)="
+            i !== currentIndex
+              ? i === (currentIndex + 1) % testimonials.length
+                ? next()
+                : prev()
+              : null
+          "
+        >
+          <div class="rounded-3xl shadow-2xl overflow-hidden h-full flex flex-col">
+            <!-- Top Section: Profile -->
+            <div
+              class="bg-white pt-8 pb-4 px-6 flex flex-col items-center justify-center z-20 relative shrink-0"
+            >
+              <!-- Avatar -->
+              <div
+                class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mb-3 text-white shadow-md"
+              >
+                <span class="material-icons text-3xl">person</span>
+              </div>
+
+              <!-- Name & Title -->
+              <h3 class="text-xl font-bold text-gray-900 leading-tight">
+                {{ testimonial.name }}
+              </h3>
+              <p class="text-sm text-gray-600 font-medium">
+                {{ testimonial.title }}
+              </p>
+            </div>
+
+            <!-- Bottom Section: Quote -->
+            <div
+              class="flex-1 bg-linear-to-b from-white/25 to-white/5 backdrop-blur-xl border-t border-white/20 p-8 relative flex items-center justify-center text-center shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2)]"
+            >
+              <!-- Background Pattern -->
+              <div
+                class="absolute inset-0 opacity-20 bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-size-[10px_10px]"
+              ></div>
+
+              <!-- Quote Icons -->
+              <span class="absolute top-4 left-6 text-5xl text-white/40 font-serif leading-none"
+                >“</span
+              >
+              <span class="absolute bottom-4 right-6 text-5xl text-white/40 font-serif leading-none"
+                >”</span
+              >
+
+              <!-- Quote Text -->
+              <p class="text-white text-base md:text-lg leading-relaxed relative z-10 font-medium">
+                {{ testimonial.quoteKey | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="flex justify-center gap-4 mt-8">
+        <button
+          (click)="prev()"
+          class="w-12 h-12 rounded-full bg-white text-primary-900 flex items-center justify-center hover:bg-gray-100 transition-colors z-10"
+        >
+          <span class="material-icons">chevron_left</span>
+        </button>
+        <button
+          (click)="next()"
+          class="w-12 h-12 rounded-full bg-white text-primary-900 flex items-center justify-center hover:bg-gray-100 transition-colors z-10"
+        >
+          <span class="material-icons">chevron_right</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Stats/Benefits Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Stat 1 -->
+      <div
+        class="bg-gray-50 rounded-3xl p-8 flex flex-col gap-6 hover:bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-100 group"
+      >
+        <div class="flex items-center gap-4">
+          <div
+            class="w-14 h-14 rounded-2xl bg-primary-100 text-primary-700 flex items-center justify-center group-hover:bg-primary-600 group-hover:text-white transition-colors duration-300"
+          >
+            <span class="material-icons text-3xl">schedule</span>
+          </div>
+          <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
+            {{ 'testimonials.stat1.title' | translate }}
+          </h3>
+        </div>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          {{ 'testimonials.stat1.description' | translate }}
+        </p>
+      </div>
+
+      <!-- Stat 2 (Bordered) -->
+      <div
+        class="bg-white border-2 border-primary-100 rounded-3xl p-8 flex flex-col gap-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-primary-300 group relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 right-0 w-32 h-32 bg-primary-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-primary-100 transition-colors"
+        ></div>
+        <div class="flex items-center gap-4 relative z-10">
+          <div
+            class="w-14 h-14 rounded-2xl bg-primary-900 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300"
+          >
+            <span class="material-icons text-3xl">savings</span>
+          </div>
+          <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
+            {{ 'testimonials.stat2.title' | translate }}
+          </h3>
+        </div>
+        <p class="text-lg text-gray-600 leading-relaxed relative z-10">
+          {{ 'testimonials.stat2.description' | translate }}
+        </p>
+      </div>
+
+      <!-- Stat 3 -->
+      <div
+        class="bg-gray-50 rounded-3xl p-8 flex flex-col gap-6 hover:bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-gray-100 group"
+      >
+        <div class="flex items-center gap-4">
+          <div
+            class="w-14 h-14 rounded-2xl bg-primary-100 text-primary-700 flex items-center justify-center group-hover:bg-primary-600 group-hover:text-white transition-colors duration-300"
+          >
+            <span class="material-icons text-3xl">verified_user</span>
+          </div>
+          <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
+            {{ 'testimonials.stat3.title' | translate }}
+          </h3>
+        </div>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          {{ 'testimonials.stat3.description' | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,178 @@
+<section class="w-full py-20 px-4 md:px-8 bg-primary-950 relative overflow-hidden">
+  <!-- Background Glows -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[100px]"></div>
+    <div
+      class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[100px]"
+    ></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    <!-- Header -->
+    <div class="text-center mb-16 space-y-4">
+      <h2 class="text-4xl md:text-5xl font-bold text-white">
+        {{ 'pricePlans.title' | translate }}
+      </h2>
+      <p class="text-xl text-blue-100 max-w-2xl mx-auto">
+        {{ 'pricePlans.subtitle' | translate }}
+      </p>
+    </div>
+
+    <!-- Plan Toggle / Legend Bar -->
+    <div class="flex flex-wrap justify-center items-center gap-4 mb-16">
+      <div class="bg-white rounded-full p-2 flex items-center gap-3 shadow-lg overflow-hidden">
+        <!-- Free Label -->
+        <div class="flex items-center gap-2 px-5 py-2.5 rounded-full transition-colors">
+          <span class="text-gray-700 font-medium text-base">{{
+            'pricePlans.toggle.freeLabel' | translate
+          }}</span>
+          <span class="bg-blue-100 text-primary-900 text-sm font-bold px-3 py-1 rounded-full">{{
+            'pricePlans.toggle.freeTag' | translate
+          }}</span>
+        </div>
+
+        <!-- Monthly (Active) -->
+        <div
+          class="px-8 py-2.5 rounded-full bg-primary-900 text-white font-medium text-base shadow-md"
+        >
+          {{ 'pricePlans.toggle.monthly' | translate }}
+        </div>
+
+        <!-- Premium Label -->
+        <div class="flex items-center gap-2 px-5 py-2.5">
+          <span class="text-gray-700 font-medium text-base">{{
+            'pricePlans.toggle.premiumLabel' | translate
+          }}</span>
+          <span class="bg-blue-100 text-primary-900 text-sm font-bold px-3 py-1 rounded-full">{{
+            'pricePlans.toggle.premiumOff' | translate
+          }}</span>
+        </div>
+
+        <!-- Annual Label -->
+        <div class="flex items-center gap-2 px-5 py-2.5">
+          <span class="text-gray-700 font-medium text-base">{{
+            'pricePlans.toggle.annualLabel' | translate
+          }}</span>
+          <span class="bg-blue-100 text-primary-900 text-sm font-bold px-3 py-1 rounded-full">{{
+            'pricePlans.toggle.annualOff' | translate
+          }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      <!-- Free Plan -->
+      <div class="relative group">
+        <div
+          class="absolute inset-0 bg-blue-500/20 blur-xl rounded-[2rem] group-hover:bg-blue-500/30 transition-all duration-500"
+        ></div>
+        <div
+          class="relative h-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 flex flex-col text-white hover:-translate-y-2 transition-transform duration-300"
+        >
+          <div class="mb-8">
+            <p class="text-blue-200 text-sm mb-2">{{ 'pricePlans.free.badge' | translate }}</p>
+            <div class="flex items-center gap-2 mb-4">
+              <h3 class="text-3xl font-bold">{{ 'pricePlans.free.title' | translate }}</h3>
+              <span class="material-icons text-blue-300">percent</span>
+            </div>
+            <div class="text-4xl font-bold mb-1">{{ 'pricePlans.free.price' | translate }}</div>
+            <p class="text-sm text-blue-200">{{ 'pricePlans.free.period' | translate }}</p>
+          </div>
+
+          <ul class="space-y-4 mb-8 flex-1">
+            <li
+              *ngFor="let feature of freeFeatures"
+              class="flex items-start gap-3 text-sm text-blue-100"
+            >
+              <span class="material-icons text-blue-400 text-lg shrink-0">check_circle</span>
+              <span>{{ feature | translate }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Premium Plan (Highlighted) -->
+      <div class="relative transform md:-translate-y-4 z-20">
+        <div class="absolute inset-0 bg-white blur-md rounded-[2rem] opacity-20"></div>
+        <div
+          class="relative bg-white rounded-[2rem] p-8 flex flex-col shadow-2xl border-4 border-white/50 transition-transform duration-300 hover:-translate-y-2"
+        >
+          <div class="mb-8">
+            <p class="text-gray-500 text-sm mb-2">{{ 'pricePlans.premium.badge' | translate }}</p>
+            <div class="flex items-center gap-2 mb-4">
+              <h3 class="text-3xl font-bold text-gray-900">
+                {{ 'pricePlans.premium.title' | translate }}
+              </h3>
+              <span class="material-icons text-blue-600">language</span>
+            </div>
+            <div class="flex items-baseline gap-1 mb-1">
+              <span class="text-5xl font-bold text-blue-700">{{
+                'pricePlans.premium.price' | translate
+              }}</span>
+              <span class="text-gray-500">{{ 'pricePlans.premium.periodShort' | translate }}</span>
+            </div>
+            <p class="text-sm text-gray-400">{{ 'pricePlans.premium.periodLong' | translate }}</p>
+          </div>
+
+          <ul class="space-y-4 mb-8 flex-1">
+            <li
+              *ngFor="let feature of premiumFeatures"
+              class="flex items-start gap-3 text-sm text-gray-600"
+            >
+              <span class="material-icons text-blue-600 text-lg shrink-0">check_circle</span>
+              <span [innerHTML]="feature | translate"></span>
+            </li>
+          </ul>
+
+          <button
+            class="absolute -bottom-7 left-1/2 -translate-x-1/2 w-9/12 py-3 rounded-full bg-blue-900 text-white font-bold text-lg shadow-2xl hover:bg-blue-800 transition-all hover:scale-105"
+          >
+            {{ 'pricePlans.premium.cta' | translate }}
+          </button>
+        </div>
+      </div>
+
+      <!-- Annual Plan -->
+      <div class="relative group">
+        <div
+          class="absolute inset-0 bg-blue-500/20 blur-xl rounded-[2rem] group-hover:bg-blue-500/30 transition-all duration-500"
+        ></div>
+        <div
+          class="relative h-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 flex flex-col text-white hover:-translate-y-2 transition-transform duration-300"
+        >
+          <div class="mb-8">
+            <p class="text-blue-200 text-sm mb-2">{{ 'pricePlans.annual.badge' | translate }}</p>
+            <div class="flex items-center gap-2 mb-4">
+              <h3 class="text-3xl font-bold">{{ 'pricePlans.annual.title' | translate }}</h3>
+              <span class="material-icons text-blue-300">rocket_launch</span>
+            </div>
+            <div class="flex items-baseline gap-1 mb-1">
+              <span class="text-5xl font-bold">{{ 'pricePlans.annual.price' | translate }}</span>
+              <span class="text-sm text-blue-200">{{
+                'pricePlans.annual.periodShort' | translate
+              }}</span>
+            </div>
+            <p class="text-sm text-blue-200">{{ 'pricePlans.annual.periodLong' | translate }}</p>
+          </div>
+
+          <ul class="space-y-4 mb-8 flex-1">
+            <li
+              *ngFor="let feature of annualFeatures"
+              class="flex items-start gap-3 text-sm text-blue-100"
+            >
+              <span class="material-icons text-blue-400 text-lg shrink-0">check_circle</span>
+              <span>{{ feature | translate }}</span>
+            </li>
+          </ul>
+
+          <button
+            class="absolute -bottom-5 left-1/2 -translate-x-1/2 w-9/12 py-3 rounded-full bg-white text-primary-900 font-bold text-base shadow-xl hover:bg-gray-50 transition-all hover:scale-105"
+          >
+            {{ 'pricePlans.annual.cta' | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

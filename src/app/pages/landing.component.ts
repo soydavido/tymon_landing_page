@@ -9,6 +9,13 @@ import { TymonStepsFunctionalityComponent } from '../components/tymon-steps-func
 import { TymonDifferentiatorsComponent } from '../components/tymon-differentiators/tymon-differentiators.component';
 import { TymonCtaComponent } from '../components/tymon-cta/tymon-cta.component';
 import { TymonFinancialControlComponent } from '../components/tymon-financial-control/tymon-financial-control.component';
+import { TymonMultiDeviceComponent } from '../components/tymon-multi-device/tymon-multi-device.component';
+import { TymonManageFinancesComponent } from '../components/tymon-manage-finances/tymon-manage-finances.component';
+import { TymonKeyModulesComponent } from '../components/tymon-key-modules/tymon-key-modules.component';
+import { TymonExpenseIncomeEvolutionComponent } from '../components/tymon-expense-income-evolution/tymon-expense-income-evolution.component';
+import { TymonTestimonialsComponent } from '../components/tymon-testimonials/tymon-testimonials.component';
+import { TymonPricePlansComponent } from '../components/tymon-price-plans/tymon-price-plans.component';
+import { TymonFaqComponent } from '../components/tymon-faq/tymon-faq.component';
 
 @Component({
   selector: 'app-landing',
@@ -24,6 +31,13 @@ import { TymonFinancialControlComponent } from '../components/tymon-financial-co
     TymonDifferentiatorsComponent,
     TymonCtaComponent,
     TymonFinancialControlComponent,
+    TymonMultiDeviceComponent,
+    TymonManageFinancesComponent,
+    TymonKeyModulesComponent,
+    TymonExpenseIncomeEvolutionComponent,
+    TymonTestimonialsComponent,
+    TymonPricePlansComponent,
+    TymonFaqComponent,
   ],
   templateUrl: './landing.component.html',
 })

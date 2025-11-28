@@ -1,0 +1,215 @@
+<section class="w-full py-24 px-4 md:px-8 bg-white relative overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+        {{ 'expenseIncomeEvolution.title' | translate }}
+      </h2>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Card 1: Dashboard -->
+      <div
+        class="bg-gray-50 rounded-[2.5rem] p-8 flex flex-col gap-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+      >
+        <!-- Image Container -->
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+          <img
+            src="images/compact-dashboard.png"
+            alt="Dashboard"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+
+        <!-- Badge -->
+        <div class="self-start">
+          <span class="bg-primary-900 text-white px-6 py-2 rounded-full font-bold text-sm">
+            {{ 'expenseIncomeEvolution.card1.badge' | translate }}
+          </span>
+        </div>
+
+        <!-- Description -->
+        <p class="text-gray-600 leading-relaxed">
+          {{ 'expenseIncomeEvolution.card1.description' | translate }}
+        </p>
+      </div>
+
+      <!-- Card 2: Cursos (Highlighted) -->
+      <div
+        class="bg-linear-to-b from-primary-800 to-primary-950 rounded-[2.5rem] p-8 flex flex-col gap-6 shadow-2xl relative transform lg:-translate-y-4 transition-all duration-300 hover:scale-105"
+      >
+        <!-- Image Container -->
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+          <img src="images/courses.png" alt="Cursos" class="w-full h-auto object-cover" />
+        </div>
+
+        <!-- Badge -->
+        <div class="self-start">
+          <span class="bg-white text-primary-950 px-6 py-2 rounded-full font-bold text-sm">
+            {{ 'expenseIncomeEvolution.card2.badge' | translate }}
+          </span>
+        </div>
+
+        <!-- Description -->
+        <div class="text-gray-300 space-y-4">
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card2.description' | translate }}
+          </p>
+
+          <div class="space-y-2">
+            <p class="font-medium text-white">
+              {{ 'expenseIncomeEvolution.card2.keyTopics' | translate }}
+            </p>
+            <p class="font-medium text-white">
+              {{ 'expenseIncomeEvolution.card2.curatedContent' | translate }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Hand Cursor Decoration (Optional based on image, but good for emphasis) -->
+        <div
+          class="absolute -bottom-8 -right-4 text-6xl drop-shadow-xl animate-bounce-slow hidden lg:block"
+        >
+          👆
+        </div>
+      </div>
+
+      <!-- Card 3: Metas -->
+      <div
+        class="bg-gray-50 rounded-[2.5rem] p-8 flex flex-col gap-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+      >
+        <!-- Image Container -->
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+          <img src="images/goals.png" alt="Metas" class="w-full h-auto object-cover" />
+        </div>
+
+        <!-- Badge -->
+        <div class="self-start">
+          <span class="bg-primary-900 text-white px-6 py-2 rounded-full font-bold text-sm">
+            {{ 'expenseIncomeEvolution.card3.badge' | translate }}
+          </span>
+        </div>
+
+        <!-- Description -->
+        <div class="text-gray-600 space-y-4">
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card3.description' | translate }}
+          </p>
+
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card3.calculator' | translate }}
+          </p>
+
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card3.progress' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4: Presupuesto -->
+      <div
+        class="bg-gray-50 rounded-[2.5rem] p-8 flex flex-col gap-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+      >
+        <!-- Image Container -->
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+          <img
+            src="images/budget-dashboard.png"
+            alt="Presupuesto"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+
+        <!-- Badge -->
+        <div class="self-start">
+          <span class="bg-primary-900 text-white px-6 py-2 rounded-full font-bold text-sm">
+            {{ 'expenseIncomeEvolution.card4.badge' | translate }}
+          </span>
+        </div>
+
+        <!-- Description -->
+        <div class="text-gray-600 space-y-4">
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card4.description' | translate }}
+          </p>
+
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card4.point1' | translate }}
+          </p>
+
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card4.point2' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 5: Transacciones -->
+      <div
+        class="bg-gray-50 rounded-[2.5rem] p-8 flex flex-col gap-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+      >
+        <!-- Image Container -->
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+          <img
+            src="images/transactions.png"
+            alt="Transacciones"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+
+        <!-- Badge -->
+        <div class="self-start">
+          <span class="bg-primary-900 text-white px-6 py-2 rounded-full font-bold text-sm">
+            {{ 'expenseIncomeEvolution.card5.badge' | translate }}
+          </span>
+        </div>
+
+        <!-- Description -->
+        <div class="text-gray-600 space-y-4">
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card5.description' | translate }}
+          </p>
+
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card5.point1' | translate }}
+          </p>
+
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card5.point2' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 6: Cuentas -->
+      <div
+        class="bg-gray-50 rounded-[2.5rem] p-8 flex flex-col gap-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+      >
+        <!-- Image Container -->
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+          <img src="images/accounts.png" alt="Cuentas" class="w-full h-auto object-cover" />
+        </div>
+
+        <!-- Badge -->
+        <div class="self-start">
+          <span class="bg-primary-900 text-white px-6 py-2 rounded-full font-bold text-sm">
+            {{ 'expenseIncomeEvolution.card6.badge' | translate }}
+          </span>
+        </div>
+
+        <!-- Description -->
+        <div class="text-gray-600 space-y-4">
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card6.description' | translate }}
+          </p>
+
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card6.point1' | translate }}
+          </p>
+
+          <p class="leading-relaxed">
+            {{ 'expenseIncomeEvolution.card6.point2' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

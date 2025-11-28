@@ -1,0 +1,64 @@
+<section class="w-full py-20 px-4 md:px-8 bg-white" id="faq-section">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-center text-primary-950 mb-20">
+      {{ 'faq.title' | translate }}
+    </h2>
+
+    <div class="flex flex-col md:flex-row gap-12 relative">
+      <!-- Sidebar Navigation (Sticky) -->
+      <div class="hidden md:block w-1/4 shrink-0">
+        <div class="sticky top-32 space-y-2">
+          <button
+            *ngFor="let category of faqData; let i = index"
+            (click)="scrollToCategory(category.id)"
+            class="w-full text-left py-3 px-4 rounded-lg transition-all duration-300 text-sm font-bold border-l-4"
+            [ngClass]="
+              activeCategory === category.id
+                ? 'text-blue-700 bg-blue-50 border-blue-700'
+                : 'text-gray-500 hover:text-gray-900 hover:bg-gray-50 border-transparent'
+            "
+          >
+            {{ category.titleKey | translate }}
+          </button>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="flex-1 space-y-20">
+        <div
+          *ngFor="let category of faqData; let i = index"
+          [id]="category.id"
+          class="scroll-mt-32"
+          (mouseenter)="activeCategory = category.id"
+        >
+          <!-- Category Header -->
+          <div class="flex items-center gap-4 mb-8">
+            <span
+              class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-700 font-bold text-xl"
+            >
+              {{ i + 1 }}
+            </span>
+            <h3 class="text-2xl font-bold text-blue-800">
+              {{ category.titleKey | translate }}
+            </h3>
+          </div>
+
+          <!-- Questions -->
+          <div class="space-y-8 pl-14">
+            <div *ngFor="let item of category.items" class="space-y-2">
+              <h4 class="font-bold text-primary-950 text-lg">
+                {{ item.questionKey | translate }}
+              </h4>
+              <p class="text-gray-600 leading-relaxed">
+                {{ item.answerKey | translate }}
+              </p>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div *ngIf="i !== faqData.length - 1" class="h-px bg-gray-200 mt-12 ml-14"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
