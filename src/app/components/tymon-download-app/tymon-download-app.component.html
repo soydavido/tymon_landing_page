@@ -1,0 +1,58 @@
+<section class="w-full px-4 md:px-8 relative z-20 -mt-40 md:-mt-64 -mb-20 md:-mb-32">
+  <div
+    class="max-w-7xl mx-auto bg-[#F5F3FF] rounded-[3rem] px-8 py-12 md:px-16 md:py-12 shadow-2xl overflow-hidden relative"
+  >
+    <div class="grid grid-cols-1 lg:grid-cols-[1.4fr_0.6fr] gap-8 items-center">
+      <!-- Text Content -->
+      <div class="space-y-6 relative z-10">
+        <h2
+          class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-950 leading-tight tracking-tight lg:whitespace-nowrap"
+        >
+          {{ 'downloadApp.title' | translate }}
+        </h2>
+        <p
+          class="text-xl md:text-2xl text-gray-800 leading-relaxed font-medium"
+          [innerHTML]="'downloadApp.description' | translate"
+        ></p>
+
+        <!-- Store Buttons -->
+        <div class="flex flex-wrap gap-6 pt-4">
+          <!-- Google Play -->
+          <button
+            type="button"
+            aria-label="Download on Google Play"
+            class="bg-white rounded-2xl px-6 py-3 md:px-8 md:py-4 flex items-center gap-3 shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:scale-[1.02] min-w-[160px] md:min-w-[220px]"
+          >
+            <img src="images/google-play-icon.png" alt="Google Play" class="h-8 md:h-10 w-auto" />
+            <div class="text-left">
+              <div class="text-lg md:text-xl font-bold text-gray-900 leading-none">Google Play</div>
+            </div>
+          </button>
+
+          <!-- App Store -->
+          <button
+            type="button"
+            aria-label="Download on the App Store"
+            class="bg-white rounded-2xl px-6 py-3 md:px-8 md:py-4 flex items-center gap-3 shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:scale-[1.02] min-w-[160px] md:min-w-[220px]"
+          >
+            <img src="images/apple-icon.png" alt="App Store" class="h-8 md:h-10 w-auto" />
+            <div class="text-left">
+              <div class="text-lg md:text-xl font-bold text-gray-900 leading-none">App Store</div>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Phone Mockups -->
+      <div
+        class="relative h-[300px] lg:h-[400px] flex items-center justify-center lg:justify-end translate-y-6 lg:translate-y-12"
+      >
+        <img
+          src="images/phone-app-preview.png"
+          alt="App Preview"
+          class="absolute bottom-0 lg:-right-14 h-[120%] lg:h-[100%] w-auto max-w-none object-contain drop-shadow-2xl"
+        />
+      </div>
+    </div>
+  </div>
+</section>

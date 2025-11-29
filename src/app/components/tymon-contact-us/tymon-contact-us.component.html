@@ -1,0 +1,149 @@
+<section class="w-full pt-20 pb-48 md:pb-80 px-4 md:px-8 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <!-- Left Column: Contact Info -->
+      <div class="space-y-12">
+        <div class="space-y-6">
+          <h2 class="text-4xl md:text-5xl font-bold text-primary-950 leading-tight">
+            {{ 'contactUs.title' | translate }}
+          </h2>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            {{ 'contactUs.description' | translate }}
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          <!-- Email -->
+          <div class="flex items-center gap-6">
+            <div class="w-14 h-14 bg-blue-900 rounded-lg flex items-center justify-center shrink-0">
+              <span class="material-icons text-white text-2xl">email</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-primary-950 text-lg">
+                {{ 'contactUs.emailLabel' | translate }}
+              </h3>
+              <a
+                href="mailto:contacto@tymon.app"
+                class="text-gray-600 hover:text-blue-700 transition-colors underline decoration-gray-300 underline-offset-4"
+              >
+                {{ 'contactUs.emailValue' | translate }}
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-center gap-6">
+            <div class="w-14 h-14 bg-blue-900 rounded-lg flex items-center justify-center shrink-0">
+              <span class="material-icons text-white text-2xl">phone</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-primary-950 text-lg">
+                {{ 'contactUs.phoneLabel' | translate }}
+              </h3>
+              <p class="text-gray-600">
+                {{ 'contactUs.phoneValue' | translate }}
+              </p>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="flex items-center gap-6">
+            <div class="w-14 h-14 bg-blue-900 rounded-lg flex items-center justify-center shrink-0">
+              <span class="material-icons text-white text-2xl">location_on</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-primary-950 text-lg">
+                {{ 'contactUs.locationLabel' | translate }}
+              </h3>
+              <p class="text-gray-600">
+                {{ 'contactUs.locationValue' | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Form -->
+      <div class="bg-[#F3F4F6] rounded-3xl p-8 md:p-10">
+        <h3 class="text-2xl font-bold text-primary-950 mb-8">
+          {{ 'contactUs.form.title' | translate }}
+        </h3>
+
+        <form (ngSubmit)="onSubmit()" class="space-y-6">
+          <!-- Name -->
+          <div class="space-y-2">
+            <label for="name" class="block text-sm font-bold text-primary-950">
+              {{ 'contactUs.form.nameLabel' | translate }}
+            </label>
+            <input
+              type="text"
+              id="name"
+              [(ngModel)]="formData.name"
+              name="name"
+              class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-transparent focus:border-blue-900 focus:ring-1 focus:ring-blue-900 outline-none transition-all placeholder-gray-500"
+              [placeholder]="'contactUs.form.namePlaceholder' | translate"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="space-y-2">
+            <label for="email" class="block text-sm font-bold text-primary-950">
+              {{ 'contactUs.form.emailLabel' | translate }}
+            </label>
+            <input
+              type="email"
+              id="email"
+              [(ngModel)]="formData.email"
+              name="email"
+              class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-transparent focus:border-blue-900 focus:ring-1 focus:ring-blue-900 outline-none transition-all placeholder-gray-500"
+              [placeholder]="'contactUs.form.emailPlaceholder' | translate"
+              required
+            />
+          </div>
+
+          <!-- Phone -->
+          <div class="space-y-2">
+            <label for="phone" class="block text-sm font-bold text-primary-950">
+              {{ 'contactUs.form.phoneLabel' | translate }}
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              [(ngModel)]="formData.phone"
+              name="phone"
+              class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-transparent focus:border-blue-900 focus:ring-1 focus:ring-blue-900 outline-none transition-all placeholder-gray-500"
+              [placeholder]="'contactUs.form.phonePlaceholder' | translate"
+            />
+          </div>
+
+          <!-- Message -->
+          <div class="space-y-2">
+            <label for="message" class="block text-sm font-bold text-primary-950">
+              {{ 'contactUs.form.messageLabel' | translate }}
+            </label>
+            <textarea
+              id="message"
+              [(ngModel)]="formData.message"
+              name="message"
+              rows="4"
+              class="w-full px-4 py-3 rounded-lg border border-gray-400 bg-transparent focus:border-blue-900 focus:ring-1 focus:ring-blue-900 outline-none transition-all placeholder-gray-500 resize-none"
+              [placeholder]="'contactUs.form.messagePlaceholder' | translate"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="flex justify-end pt-2">
+            <button
+              type="submit"
+              class="bg-blue-900 text-white px-10 py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors shadow-lg"
+            >
+              {{ 'contactUs.form.submitBtn' | translate }}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

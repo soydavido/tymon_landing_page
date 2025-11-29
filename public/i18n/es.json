@@ -233,5 +233,56 @@
       "q1": "¿Qué hace exactamente la IA para ahorrar?",
       "a1": "Analiza tus patrones de gasto, identifica periodos de superávit (días en los que gastas menos de lo proyectado) y realiza \"microlanzamientos\" de dinero hacia tus metas, asegurando que nunca afecte tus gastos esenciales."
     }
+  },
+  "requestDemo": {
+    "title": "Conviértete en partner de Tymon y lleva soluciones financieras inteligentes a tus clientes",
+    "subtitle": "Acceso a tecnología, soporte dedicado y ventajas estratégicas",
+    "requestBtn": "Solicitar demo",
+    "createAccountBtn": "Crear tu cuenta"
+  },
+  "contactUs": {
+    "title": "¿Preguntas? Estamos aquí para ayudarte",
+    "description": "Si tienes dudas sobre Tymon o deseas conocer más sobre cómo podemos ayudarte a gestionar tus finanzas, no dudes en contactarnos.",
+    "emailLabel": "Email",
+    "emailValue": "contacto@tymon.app",
+    "phoneLabel": "Teléfono",
+    "phoneValue": "+58 (123) 456-7890",
+    "locationLabel": "Ubicación",
+    "locationValue": "Caracas, Venezuela",
+    "form": {
+      "title": "Envíanos un mensaje",
+      "nameLabel": "Nombre y apellido*",
+      "namePlaceholder": "Tu nombre",
+      "emailLabel": "Email*",
+      "emailPlaceholder": "tu@email.com",
+      "phoneLabel": "Teléfono",
+      "phonePlaceholder": "+58 (123) 456-789",
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Mensaje*",
+      "submitBtn": "Enviar"
+    }
+  },
+  "downloadApp": {
+    "title": "Tymon – Tu ruta al éxito financiero",
+    "description": "<span class=\"font-bold\">¡Descárgala gratis</span> y disfruta de automatización inteligente, seguridad, actualizaciones y beneficios exclusivos. Aquí no solo controlas: ganas!"
+  },
+  "footer": {
+    "tymonApp": {
+      "title": "Tymon app",
+      "home": "Inicio",
+      "features": "Funcionalidades",
+      "pricing": "Precios"
+    },
+    "about": {
+      "title": "Sobre",
+      "terms": "Términos y condiciones",
+      "support": "Soporte",
+      "contact": "Contacto"
+    },
+    "newsletter": {
+      "label": "Newsletter",
+      "placeholder": "Email",
+      "button": "Suscríbete"
+    }
   }
 }

@@ -1,0 +1,110 @@
+<footer class="w-full bg-[#05093b] pt-32 md:pt-48 pb-12 px-4 md:px-8 relative z-10">
+  <!-- Background Decoration -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div
+      class="absolute bottom-0 left-0 w-[800px] h-[800px] bg-blue-900/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4"
+    ></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      <!-- Column 1: Tymon App Links -->
+      <div class="space-y-6">
+        <h3 class="text-white font-bold text-2xl">{{ 'footer.tymonApp.title' | translate }}</h3>
+        <ul class="space-y-4">
+          <li>
+            <a href="#" class="text-white hover:text-gray-200 transition-colors text-lg">{{
+              'footer.tymonApp.home' | translate
+            }}</a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-gray-200 transition-colors text-lg">{{
+              'footer.tymonApp.features' | translate
+            }}</a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-gray-200 transition-colors text-lg">{{
+              'footer.tymonApp.pricing' | translate
+            }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 2: About Links -->
+      <div class="space-y-6">
+        <h3 class="text-white font-bold text-2xl">{{ 'footer.about.title' | translate }}</h3>
+        <ul class="space-y-4">
+          <li>
+            <a href="#" class="text-white hover:text-gray-200 transition-colors text-lg">{{
+              'footer.about.terms' | translate
+            }}</a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-gray-200 transition-colors text-lg">{{
+              'footer.about.support' | translate
+            }}</a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-gray-200 transition-colors text-lg">{{
+              'footer.about.contact' | translate
+            }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 3 & 4: Newsletter (Spans 2 cols on large screens) -->
+      <!-- <div class="lg:col-span-2 space-y-6 lg:pl-12">
+        <h3 class="text-white font-bold text-2xl">{{ 'footer.newsletter.label' | translate }}</h3>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <input
+            type="email"
+            [placeholder]="'footer.newsletter.placeholder' | translate"
+            class="flex-1 bg-transparent border border-white rounded-lg px-4 py-3 text-white placeholder-gray-300 focus:border-gray-200 focus:outline-none transition-colors text-lg"
+          />
+          <button
+            class="bg-white text-primary-950 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg"
+          >
+            {{ 'footer.newsletter.button' | translate }}
+          </button>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Divider -->
+    <div class="h-px bg-white w-full mb-12"></div>
+
+    <!-- Bottom Bar -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+      <!-- Logo -->
+      <img src="logo/white-horizontal-logo.png" alt="Tymon" class="h-20 w-auto" />
+
+      <!-- Social Icons -->
+      <div class="flex items-center gap-4">
+        <a
+          href="#"
+          class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
+        >
+          <img src="images/instagram.svg" alt="Instagram" class="h-5 w-5 object-contain" />
+        </a>
+        <a
+          href="#"
+          class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
+        >
+          <img src="images/linkedin.svg" alt="LinkedIn" class="h-5 w-5 object-contain" />
+        </a>
+        <a
+          href="#"
+          class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
+        >
+          <img src="images/twitter.svg" alt="Twitter" class="h-5 w-5 object-contain" />
+        </a>
+        <a
+          href="#"
+          class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
+        >
+          <img src="images/youtube.svg" alt="YouTube" class="h-5 w-5 object-contain" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

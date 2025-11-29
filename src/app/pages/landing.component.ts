@@ -16,6 +16,10 @@ import { TymonExpenseIncomeEvolutionComponent } from '../components/tymon-expens
 import { TymonTestimonialsComponent } from '../components/tymon-testimonials/tymon-testimonials.component';
 import { TymonPricePlansComponent } from '../components/tymon-price-plans/tymon-price-plans.component';
 import { TymonFaqComponent } from '../components/tymon-faq/tymon-faq.component';
+import { TymonRequestDemoComponent } from '../components/tymon-request-demo/tymon-request-demo.component';
+import { TymonContactUsComponent } from '../components/tymon-contact-us/tymon-contact-us.component';
+import { TymonDownloadAppComponent } from '../components/tymon-download-app/tymon-download-app.component';
+import { FooterComponent } from '../components/footer/footer.component';
 
 @Component({
   selector: 'app-landing',
@@ -38,6 +42,10 @@ import { TymonFaqComponent } from '../components/tymon-faq/tymon-faq.component';
     TymonTestimonialsComponent,
     TymonPricePlansComponent,
     TymonFaqComponent,
+    TymonRequestDemoComponent,
+    TymonContactUsComponent,
+    TymonDownloadAppComponent,
+    FooterComponent,
   ],
   templateUrl: './landing.component.html',
 })
