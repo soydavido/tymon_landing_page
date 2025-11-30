@@ -3,35 +3,22 @@
     "home": "Home",
     "features": "Features",
     "pricing": "Pricing",
-    "downloadNow": "Download now",
+    "downloadNow": "Download Now",
     "login": "Login"
   },
   "titleSection": {
-    "appName": "Tymon",
-    "description": "It is the app that puts your finances on autopilot so you can take control of your money without stress",
-    "slogan": "your route to success.",
-    "welcome": "Welcome!",
-    "usernamePlaceholder": "Username",
-    "passwordPlaceholder": "Password",
-    "forgotPassword": "Forgot your password?",
-    "troubleLoggingIn": "Having trouble?",
-    "loginButton": "Login",
-    "noAccount": "Don't have an account?",
-    "register": "Sign up!",
-    "financesUnderControl": "Your <span class=\"font-bold\">finances</span><br>under your command",
-    "totalBalance": "Total Balance"
+    "description": "It's the app that puts your finances on autopilot so you can take control of your money without stress"
   },
   "iaProyectionChart": {
-    "title": "Planifica, controla y ahorra sin complicaciones",
-    "subtitle": "Finanzas simples, decisiones inteligentes",
-    "chartTitle": "Proyección Ahorro con IA"
+    "title": "Plan, control, and save without complications",
+    "subtitle": "Simple finances, smart decisions",
+    "chartTitle": "AI Savings Projection"
   },
   "tymonSteps": {
     "title": "How Tymon works in 4 steps",
-    "subtitle": "The navigation system",
-    "step1": "<span class=\"font-bold\">Hassle-free</span> registration",
-    "step2": "<span class=\"font-bold\">Your</span> accounts in one place",
-    "step3": "<span class=\"font-bold\">Effortless</span> automation",
+    "step1": "<span class=\"font-bold\">Sign up</span> without complications",
+    "step2": "<span class=\"font-bold\">Your accounts</span> in one place",
+    "step3": "<span class=\"font-bold\">Automation</span> without effort",
     "step4": "<span class=\"font-bold\">Reach</span> your financial goals"
   },
   "differentiators": {
@@ -56,11 +43,11 @@
     "badge2": "More control",
     "badge3": "Smart savings",
     "badge4": "Total security",
-    "badge5": "Simplicity"
+    "badge5": "Ease"
   },
   "financialControl": {
     "title": "Your financial control center",
-    "description": "Connect all your accounts, visualize your expenses, and make smart decisions from one place.",
+    "description": "Connect all aspects of your financial life in a single intelligent ecosystem.",
     "leftPanel": {
       "dashboard": "Dashboard",
       "courses": "Courses",
@@ -72,9 +59,229 @@
       "accounts": "Accounts"
     },
     "badges": {
-      "realTime": "Real time",
-      "smartAlerts": "Smart alerts",
-      "expenseCalc": "Expense calculator"
+      "realTime": "Real Time",
+      "smartAlerts": "Smart Alerts",
+      "expenseCalc": "Expense Calculation"
+    }
+  },
+  "keyModules": {
+    "title": "Key Modules",
+    "subtitle": "Navigate your finances",
+    "dashboard": "Dashboard",
+    "courses": "Courses",
+    "goals": "Goals",
+    "budget": "Budget",
+    "transactions": "Transactions",
+    "accounts": "Accounts"
+  },
+  "expenseIncomeEvolution": {
+    "title": "Income/Expense Evolution",
+    "card1": {
+      "badge": "Dashboard",
+      "description": "Offers a panoramic view of your economic health, including income vs. expense evolution, balance summary, and key alerts."
+    },
+    "card2": {
+      "badge": "Courses and Education",
+      "description": "Financial education module to improve your decision-making and knowledge.",
+      "keyTopics": "Key topics: debt, basic investment, strategic savings, and planning.",
+      "curatedContent": "Curated content: concise and practical lessons applicable to your reality."
+    },
+    "card3": {
+      "badge": "Financial Goals",
+      "description": "Plan and save in a structured way for short or long-term goals.",
+      "calculator": "Savings calculator: determine how much you need to save weekly/monthly.",
+      "progress": "Progress Tracking: visualize your advance towards each goal."
+    },
+    "card4": {
+      "badge": "Budget",
+      "description": "Assign your spending limits in specific categories and avoid deviations.",
+      "point1": "Personalized Budgets: Create monthly or event-based plans.",
+      "point2": "Excess Alerts: Notifications when you approach your limit."
+    },
+    "card5": {
+      "badge": "Transactions",
+      "description": "Detailed and automated record of all your money movements.",
+      "point1": "Automatic categorization: classifies expenses and income without your intervention.",
+      "point2": "Advanced search: filter movements by date, amount, or merchant."
+    },
+    "card6": {
+      "badge": "Accounts",
+      "description": "Centralize information from all your bank accounts and financial products.",
+      "point1": "Multibanking: automatic connection with multiple institutions.",
+      "point2": "Wealth view: consolidated balance of all your holdings."
+    }
+  },
+  "testimonials": {
+    "quote": "Tymon was born from a simple idea: your money deserves to be managed intelligently, not stressfully. Our app helps every user see how their money grows, save effortlessly, and make decisions with total confidence.",
+    "quote2": "Since using Tymon, I have total control of my expenses. Automation has saved me hours of manual work and now I can focus on my savings goals.",
+    "quote3": "Incredible tool. Integration with my banks was super simple and AI projections have helped me plan my vacations without getting into debt.",
+    "stat1": {
+      "title": "+5 hours monthly",
+      "description": "Recover time for what matters."
+    },
+    "stat2": {
+      "title": "Up to 20% savings",
+      "description": "Make smarter decisions with insights and projections."
+    },
+    "stat3": {
+      "title": "Bank-Level Protection",
+      "description": "Your data is safe with our bank-grade encryption."
+    }
+  },
+  "multiDevice": {
+    "badge": "Multi-platform",
+    "title": "Your financial control,",
+    "titleHighlight": "wherever you are.",
+    "description": "It doesn't matter if you're at your desk, on the couch with your tablet, or on the move with your phone. Tymon adapts perfectly to any screen so you never lose sight of your goals.",
+    "feature1Title": "Instant Synchronization",
+    "feature1Desc": "Your data updates in real-time across all your devices.",
+    "feature2Title": "Unified Security",
+    "feature2Desc": "Secure access with biometrics on mobile and bank-grade encryption."
+  },
+  "manageFinances": {
+    "titleLine1": "Direct",
+    "titleLine2": "your",
+    "titleLine3": "finances",
+    "descriptionPart1": "With",
+    "descriptionPart2": ", manage your personal finances simply and intelligently. All in one place."
+  },
+  "pricePlans": {
+    "title": "Plans and Pricing",
+    "subtitle": "Tymon adapts to your lifestyle. Start for free and unlock the full experience whenever you want.",
+    "toggle": {
+      "freeLabel": "7 days for you",
+      "freeTag": "Free",
+      "monthly": "Monthly",
+      "premiumLabel": "Premium",
+      "premiumOff": "20% OFF",
+      "annualLabel": "Annual",
+      "annualOff": "30% OFF"
+    },
+    "free": {
+      "badge": "Ideal to start",
+      "title": "Free",
+      "price": "Free",
+      "period": "Forever",
+      "features": {
+        "manual": "Manual expense tracking",
+        "overview": "Expense overview",
+        "marketplace": "Basic marketplace access",
+        "multibanking": "Real multibanking",
+        "savings": "Automatic savings"
+      }
+    },
+    "premium": {
+      "badge": "Total Automation",
+      "title": "Premium",
+      "price": "$7",
+      "periodShort": "/ month",
+      "periodLong": "Per month",
+      "cta": "Try it 14 Days Free!",
+      "features": {
+        "unlimited": "Unlimited real multibanking",
+        "reports": "Smart reports",
+        "savings": "**Automatic savings**",
+        "alerts": "Exclusive alerts and benefits",
+        "education": "Complete financial education"
+      }
+    },
+    "annual": {
+      "badge": "Financial Freedom",
+      "title": "Annual",
+      "price": "$60",
+      "periodShort": "/ year",
+      "periodLong": "(2 months free)",
+      "cta": "Select Annual",
+      "features": {
+        "allPremium": "All Premium plan features",
+        "support": "24/7 Priority support",
+        "gift": "2 months free",
+        "earlyAccess": "Early access to features",
+        "challenges": "Exclusive challenges"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "security": {
+      "title": "Security and Privacy",
+      "q1": "Is Tymon a secure app?",
+      "a1": "Yes. We use AES-256 bank-level encryption and comply with international standards. Your information is confidential and only you have access to it.",
+      "q2": "How does Tymon connect to my banks?",
+      "a2": "We use a secure consolidation API, following global digital banking standards. This only allows us to read your balances and movements, never transfer or handle funds."
+    },
+    "multibanking": {
+      "title": "Multibanking Functionality",
+      "q1": "Can I connect multiple banks?",
+      "a1": "Of course. Tymon is a real multibanking platform that integrates all your accounts and cards, showing all your balances and movements in real-time.",
+      "q2": "Does it work with foreign currency accounts?",
+      "a2": "Yes. Tymon consolidates balances in Bs. and USD (and even other currencies with the Pro plan), applying the official BCV rate or a market rate pre-selected by you for a unified view."
+    },
+    "beginners": {
+      "title": "Usage and Assistance for Beginners",
+      "q1": "What if I don't know about finances?",
+      "a1": "No problem. Tymon is your financial assistant. It guides you with alerts, practical financial education, and personalized recommendations on when to save or adjust your budget."
+    },
+    "plans": {
+      "title": "Plans and Trials",
+      "q1": "Can I try the Premium version?",
+      "a1": "Sure. You have 14 days free (no card commitment) to explore all automation, multibanking, and smart reporting features."
+    },
+    "automation": {
+      "title": "Automation and Smart Savings",
+      "q1": "What exactly does AI do to save?",
+      "a1": "It analyzes your spending patterns, identifies surplus periods (days when you spend less than projected), and performs \"micro-transfers\" of money towards your goals, ensuring it never affects your essential expenses."
+    }
+  },
+  "requestDemo": {
+    "title": "Become a Tymon partner and bring smart financial solutions to your clients",
+    "subtitle": "Access to technology, dedicated support, and strategic advantages",
+    "requestBtn": "Request demo",
+    "createAccountBtn": "Create your account"
+  },
+  "contactUs": {
+    "title": "Questions? We are here to help you",
+    "description": "If you have doubts about Tymon or want to know more about how we can help you manage your finances, do not hesitate to contact us.",
+    "emailLabel": "Email",
+    "emailValue": "contact@tymon.app",
+    "phoneLabel": "Phone",
+    "phoneValue": "+58 (123) 456-7890",
+    "locationLabel": "Location",
+    "locationValue": "Caracas, Venezuela",
+    "form": {
+      "title": "Send us a message",
+      "nameLabel": "Name and surname*",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email*",
+      "emailPlaceholder": "your@email.com",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "+58 (123) 456-789",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Message*",
+      "submitBtn": "Send"
+    }
+  },
+  "downloadApp": {
+    "title": "Tymon – Your route to financial success",
+    "description": "<span class=\"font-bold\">Download it for free</span> and enjoy smart automation, security, updates, and exclusive benefits. Here you don't just control: you win!"
+  },
+  "footer": {
+    "tymonApp": {
+      "title": "Tymon app",
+      "home": "Home",
+      "features": "Features",
+      "pricing": "Pricing"
+    },
+    "about": {
+      "title": "About",
+      "terms": "Terms and conditions",
+      "support": "Support",
+      "contact": "Contact"
+    },
+    "newsletter": {
+      "label": "Newsletter",
+      "placeholder": "Email",
+      "button": "Subscribe"
     }
   }
 }
