@@ -7,15 +7,17 @@ import { provideRouter } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
 import { provideTranslateService, TranslateLoader, TranslateService } from '@ngx-translate/core';
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+import { AppConfigService } from './services/app-config.service';
 
 import { routes } from './app.routes';
 
-export function initializeApp(translate: TranslateService) {
+export function initializeApp(translate: TranslateService, appConfig: AppConfigService) {
   return () => {
     translate.addLangs(['en', 'es']);
     translate.setDefaultLang('es');
     const browserLang = translate.getBrowserLang();
-    return translate.use(browserLang?.match(/en|es/) ? browserLang : 'es');
+    translate.use(browserLang?.match(/en|es/) ? browserLang : 'es');
+    return appConfig.loadConfig();
   };
 }
 
@@ -34,7 +36,7 @@ export const appConfig: ApplicationConfig = {
     {
       provide: APP_INITIALIZER,
       useFactory: initializeApp,
-      deps: [TranslateService],
+      deps: [TranslateService, AppConfigService],
       multi: true,
     },
   ],
