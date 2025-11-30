@@ -15,10 +15,11 @@
     >
       {{ 'header.downloadNow' | translate }}
     </button>
-    <button
-      class="border border-white text-white px-6 py-2 rounded-lg text-base font-bold hover:bg-white/10 transition-colors"
+    <a
+      [href]="configService.get('CLIENT_APP_URL')"
+      class="border border-white text-white px-6 py-2 rounded-lg text-base font-bold hover:bg-white/10 transition-colors cursor-pointer"
     >
       {{ 'header.login' | translate }}
-    </button>
+    </a>
   </div>
 </header>

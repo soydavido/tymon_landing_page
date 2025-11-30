@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { AppConfigService } from '../../services/app-config.service';
 
 @Component({
   selector: 'app-header',
@@ -9,4 +10,6 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './header.component.html',
   styleUrls: [],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  constructor(protected configService: AppConfigService) {}
+}

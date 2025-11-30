@@ -81,25 +81,33 @@
       <!-- Social Icons -->
       <div class="flex items-center gap-4">
         <a
-          href="#"
+          [href]="configService.get('INSTAGRAM_URL')"
+          target="_blank"
+          rel="noopener noreferrer"
           class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
         >
           <img src="images/instagram.svg" alt="Instagram" class="h-5 w-5 object-contain" />
         </a>
         <a
-          href="#"
+          [href]="configService.get('LINKEDIN_URL')"
+          target="_blank"
+          rel="noopener noreferrer"
           class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
         >
           <img src="images/linkedin.svg" alt="LinkedIn" class="h-5 w-5 object-contain" />
         </a>
         <a
-          href="#"
+          [href]="configService.get('TWITTER_URL')"
+          target="_blank"
+          rel="noopener noreferrer"
           class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
         >
           <img src="images/twitter.svg" alt="Twitter" class="h-5 w-5 object-contain" />
         </a>
         <a
-          href="#"
+          [href]="configService.get('YOUTUBE_URL')"
+          target="_blank"
+          rel="noopener noreferrer"
           class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
         >
           <img src="images/youtube.svg" alt="YouTube" class="h-5 w-5 object-contain" />

@@ -243,11 +243,8 @@
     "title": "Questions? We are here to help you",
     "description": "If you have doubts about Tymon or want to know more about how we can help you manage your finances, do not hesitate to contact us.",
     "emailLabel": "Email",
-    "emailValue": "contact@tymon.app",
     "phoneLabel": "Phone",
-    "phoneValue": "+58 (123) 456-7890",
     "locationLabel": "Location",
-    "locationValue": "Caracas, Venezuela",
     "form": {
       "title": "Send us a message",
       "nameLabel": "Name and surname*",
@@ -255,7 +252,7 @@
       "emailLabel": "Email*",
       "emailPlaceholder": "your@email.com",
       "phoneLabel": "Phone",
-      "phonePlaceholder": "+58 (123) 456-789",
+      "phonePlaceholder": "(123) 456-789",
       "messageLabel": "Message",
       "messagePlaceholder": "Message*",
       "submitBtn": "Send"
