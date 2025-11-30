@@ -6,7 +6,8 @@
   "GOOGLE_PLAY_URL": "https://play.google.com",
   "APP_STORE_URL": "https://apps.apple.com",
   "CONTACT_EMAIL": "contacto@tymon.app",
-  "CONTACT_PHONE": "(123) 456-7890",
+  "CONTACT_PHONE": "+58 (123) 456-7890",
   "CONTACT_LOCATION": "Caracas, Venezuela",
-  "CLIENT_APP_URL": "https://test.tymon.com.ve/app/login"
+  "CLIENT_APP_URL": "https://test.tymon.com.ve/app/login",
+  "CLIENT_APP_REGISTER_URL": "https://test.tymon.com.ve/app/register"
 }
