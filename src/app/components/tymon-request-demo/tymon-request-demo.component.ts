@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { AppConfigService } from '../../services/app-config.service';
 
 @Component({
   selector: 'app-tymon-request-demo',
@@ -9,4 +10,6 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './tymon-request-demo.component.html',
   styleUrls: [],
 })
-export class TymonRequestDemoComponent {}
+export class TymonRequestDemoComponent {
+  constructor(protected configService: AppConfigService) {}
+}
