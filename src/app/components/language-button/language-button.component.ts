@@ -14,10 +14,7 @@ export class LanguageButtonComponent {
   isDropdownOpen = signal(false);
   currentLang = signal(this.translate.currentLang || 'es');
 
-  languages = [
-    { code: 'es', label: 'Español' },
-    { code: 'en', label: 'English' },
-  ];
+  languages = [{ code: 'es' }, { code: 'en' }];
 
   toggleDropdown() {
     this.isDropdownOpen.update((v) => !v);

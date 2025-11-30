@@ -283,5 +283,9 @@
       "placeholder": "Email",
       "button": "Subscribe"
     }
+  },
+  "languages": {
+    "es": "Spanish",
+    "en": "English"
   }
 }
