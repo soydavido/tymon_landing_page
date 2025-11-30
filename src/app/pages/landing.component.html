@@ -13,25 +13,25 @@
     <div class="flex justify-end px-8 py-2">
       <app-language-button />
     </div>
-    <app-header></app-header>
+    <app-header id="header" />
     <main>
-      <app-title-section></app-title-section>
-      <app-ia-proyection-chart></app-ia-proyection-chart>
-      <app-tymon-steps-functionality></app-tymon-steps-functionality>
-      <app-tymon-differentiators></app-tymon-differentiators>
-      <app-tymon-cta></app-tymon-cta>
-      <app-tymon-financial-control></app-tymon-financial-control>
-      <app-tymon-multi-device></app-tymon-multi-device>
-      <app-tymon-manage-finances></app-tymon-manage-finances>
-      <app-tymon-key-modules></app-tymon-key-modules>
-      <app-tymon-expense-income-evolution></app-tymon-expense-income-evolution>
-      <app-tymon-testimonials></app-tymon-testimonials>
-      <app-tymon-price-plans></app-tymon-price-plans>
-      <app-tymon-faq></app-tymon-faq>
-      <app-tymon-request-demo></app-tymon-request-demo>
-      <app-tymon-contact-us></app-tymon-contact-us>
-      <app-tymon-download-app></app-tymon-download-app>
-      <app-footer></app-footer>
+      <app-title-section id="home" />
+      <app-ia-proyection-chart id="ia-projection" />
+      <app-tymon-steps-functionality id="steps" />
+      <app-tymon-differentiators id="differentiators" />
+      <app-tymon-cta id="cta" />
+      <app-tymon-financial-control id="financial-control" />
+      <app-tymon-multi-device id="multi-device" />
+      <app-tymon-manage-finances id="manage-finances" />
+      <app-tymon-key-modules id="key-modules" />
+      <app-tymon-expense-income-evolution id="features" />
+      <app-tymon-testimonials id="testimonials" />
+      <app-tymon-price-plans id="pricing" />
+      <app-tymon-faq id="faq" />
+      <app-tymon-request-demo id="request-demo" />
+      <app-tymon-contact-us id="contact-us" />
+      <app-tymon-download-app id="download-app" />
+      <app-footer id="footer" />
     </main>
   </div>
 
@@ -39,7 +39,7 @@
   <button
     *ngIf="showScrollTopButton"
     (click)="scrollToTop()"
-    class="fixed bottom-2 right-2 z-50 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex items-center justify-center"
+    class="fixed bottom-2 right-2 z-50 bg-primary hover:bg-primary-800 text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 flex items-center justify-center"
     aria-label="Scroll to top"
   >
     <img
