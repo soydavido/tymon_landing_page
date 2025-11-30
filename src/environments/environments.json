@@ -9,5 +9,6 @@
   "CONTACT_PHONE": "+58 (123) 456-7890",
   "CONTACT_LOCATION": "Caracas, Venezuela",
   "CLIENT_APP_URL": "https://test.tymon.com.ve/app/login",
-  "CLIENT_APP_REGISTER_URL": "https://test.tymon.com.ve/app/register"
+  "CLIENT_APP_REGISTER_URL": "https://test.tymon.com.ve/app/register",
+  "TERMS_CONDITIONS_URL": "https://tymon.app/terms"
 }
