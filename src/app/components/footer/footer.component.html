@@ -13,19 +13,26 @@
         <h3 class="text-white font-bold text-2xl">{{ 'footer.tymonApp.title' | translate }}</h3>
         <ul class="space-y-4">
           <li>
-            <a href="#" class="text-white hover:text-gray-200 transition-colors text-lg">{{
-              'footer.tymonApp.home' | translate
-            }}</a>
+            <span
+              (click)="scrollToSection('header')"
+              class="text-white hover:text-gray-200 transition-colors text-lg cursor-pointer"
+              >{{ 'footer.tymonApp.home' | translate }}</span
+            >
           </li>
           <li>
-            <a href="#" class="text-white hover:text-gray-200 transition-colors text-lg">{{
-              'footer.tymonApp.features' | translate
-            }}</a>
+            <span
+              (click)="scrollToSection('features')"
+              class="text-white hover:text-gray-200 transition-colors text-lg cursor-pointer"
+            >
+              {{ 'footer.tymonApp.features' | translate }}
+            </span>
           </li>
           <li>
-            <a href="#" class="text-white hover:text-gray-200 transition-colors text-lg">{{
-              'footer.tymonApp.pricing' | translate
-            }}</a>
+            <span
+              (click)="scrollToSection('pricing')"
+              class="text-white hover:text-gray-200 transition-colors text-lg cursor-pointer"
+              >{{ 'footer.tymonApp.pricing' | translate }}</span
+            >
           </li>
         </ul>
       </div>
