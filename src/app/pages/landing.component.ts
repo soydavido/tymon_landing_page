@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageButtonComponent } from '../components/language-button/language-button.component';
@@ -49,4 +49,20 @@ import { FooterComponent } from '../components/footer/footer.component';
   ],
   templateUrl: './landing.component.html',
 })
-export class LandingComponent {}
+export class LandingComponent {
+  showScrollTopButton = false;
+  isScrollingToTop = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.showScrollTopButton = window.scrollY > 300;
+    if (!this.showScrollTopButton) {
+      this.isScrollingToTop = false;
+    }
+  }
+
+  scrollToTop() {
+    this.isScrollingToTop = true;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
