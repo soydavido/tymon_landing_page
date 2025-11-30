@@ -21,6 +21,10 @@ export class TymonContactUsComponent {
 
   constructor(protected configService: AppConfigService) {}
 
+  sanitizePhoneNumberLink(phoneNumber: string): string {
+    return phoneNumber.replace(/[^0-9+]/g, '');
+  }
+
   onSubmit() {
     console.log('Form submitted:', this.formData);
   }

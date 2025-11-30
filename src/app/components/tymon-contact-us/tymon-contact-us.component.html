@@ -40,9 +40,12 @@
               <h3 class="font-bold text-primary-950 text-lg">
                 {{ 'contactUs.phoneLabel' | translate }}
               </h3>
-              <p class="text-gray-600">
+              <a
+                [href]="'tel:' + sanitizePhoneNumberLink(configService.get('CONTACT_PHONE'))"
+                class="text-gray-600 hover:text-blue-700 transition-colors underline decoration-gray-300 underline-offset-4"
+              >
                 {{ configService.get('CONTACT_PHONE') }}
-              </p>
+              </a>
             </div>
           </div>
 
