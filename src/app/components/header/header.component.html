@@ -6,15 +6,15 @@
   <!-- Desktop Nav -->
   <nav class="hidden md:flex gap-8 text-gray-300 text-xl font-medium">
     <a href="#" class="hover:text-white transition-colors">{{ 'header.home' | translate }}</a>
-    <a
+    <span
       (click)="scrollToSection('features')"
       class="hover:text-white transition-colors cursor-pointer"
-      >{{ 'header.features' | translate }}</a
+      >{{ 'header.features' | translate }}</span
     >
-    <a
+    <span
       (click)="scrollToSection('pricing')"
       class="hover:text-white transition-colors cursor-pointer"
-      >{{ 'header.pricing' | translate }}</a
+      >{{ 'header.pricing' | translate }}</span
     >
   </nav>
 
@@ -53,15 +53,21 @@
     "
   >
     <nav class="flex flex-col gap-4 text-center text-white text-xl font-medium">
-      <a (click)="scrollToSection('home')" class="hover:text-blue-400 transition-colors py-2">{{
-        'header.home' | translate
-      }}</a>
-      <a (click)="scrollToSection('features')" class="hover:text-blue-400 transition-colors py-2">{{
-        'header.features' | translate
-      }}</a>
-      <a (click)="scrollToSection('pricing')" class="hover:text-blue-400 transition-colors py-2">{{
-        'header.pricing' | translate
-      }}</a>
+      <span
+        (click)="scrollToSection('home')"
+        class="hover:text-blue-400 transition-colors py-2 cursor-pointer"
+        >{{ 'header.home' | translate }}</span
+      >
+      <span
+        (click)="scrollToSection('features')"
+        class="hover:text-blue-400 transition-colors py-2 cursor-pointer"
+        >{{ 'header.features' | translate }}</span
+      >
+      <span
+        (click)="scrollToSection('pricing')"
+        class="hover:text-blue-400 transition-colors py-2 cursor-pointer"
+        >{{ 'header.pricing' | translate }}</span
+      >
     </nav>
 
     <div class="flex flex-col gap-4">
