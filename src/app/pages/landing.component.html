@@ -39,7 +39,7 @@
   <button
     *ngIf="showScrollTopButton"
     (click)="scrollToTop()"
-    class="fixed bottom-2 right-2 z-50 bg-primary hover:bg-primary-800 text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 flex items-center justify-center"
+    class="fixed bottom-2 right-2 z-[999] bg-primary hover:bg-primary-800 text-white rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 flex items-center justify-center w-10 h-10 md:w-12 md:h-12"
     aria-label="Scroll to top"
   >
     <img
@@ -48,6 +48,8 @@
       alt="Tymon"
       class="h-6 w-6 animate-spin"
     />
-    <span *ngIf="!isScrollingToTop" class="material-icons text-2xl">arrow_upward</span>
+    <span *ngIf="!isScrollingToTop" class="material-icons text-base md:text-2xl leading-none">
+      arrow_upward
+    </span>
   </button>
 </div>

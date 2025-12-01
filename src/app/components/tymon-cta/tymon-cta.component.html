@@ -27,11 +27,13 @@
 
         <!-- Image Content -->
         <div
-          class="flex-1 relative w-full max-w-md md:max-w-none flex justify-center md:justify-end"
+          class="flex-1 relative w-full max-w-sm md:max-w-none flex justify-center md:justify-end"
         >
           <div class="relative">
-            <!-- Main Image with Duotone Effect -->
-            <div class="relative rounded-3xl overflow-hidden w-72 h-72 md:w-96 md:h-96">
+            <!-- Main Image with Duotone Effect (smaller on small screens) -->
+            <div
+              class="relative rounded-3xl overflow-hidden w-48 h-48 sm:w-60 md:w-96 sm:h-60 md:h-96"
+            >
               <!-- Placeholder image - using a generic business/finance person -->
               <img
                 src="images/girl-phone.png"
@@ -42,65 +44,79 @@
 
             <!-- Floating Badge 1 (Top Left) -->
             <div
-              class="absolute -top-6 -left-12 md:-left-16 bg-white rounded-xl p-3 shadow-lg flex items-center gap-3 animate-pop-cycle"
+              class="absolute -top-4 -left-1 md:-left-16 bg-white rounded-xl p-2 md:p-3 shadow-lg flex items-center gap-2 md:gap-3 animate-pop-cycle"
               style="animation-delay: 0s"
             >
-              <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center">
-                <span class="material-icons text-primary-600 text-sm">check</span>
+              <div
+                class="w-6 h-6 md:w-8 md:h-8 bg-primary-100 rounded-lg flex items-center justify-center"
+              >
+                <span class="material-icons text-primary-600 text-xs md:text-sm">check</span>
               </div>
-              <span class="text-primary-950 font-bold text-sm md:text-base whitespace-nowrap">
+              <span class="text-primary-950 font-bold text-xs md:text-sm whitespace-nowrap">
                 {{ 'cta.badge1' | translate }}
               </span>
             </div>
 
             <!-- Floating Badge 2 (Bottom Right) -->
             <div
-              class="absolute -bottom-6 -right-4 md:-right-8 bg-white rounded-xl p-3 shadow-lg flex items-center gap-3 animate-pop-cycle"
+              class="absolute -bottom-4 -right-1 md:-right-8 bg-white rounded-xl p-2 md:p-3 shadow-lg flex items-center gap-2 md:gap-3 animate-pop-cycle"
               style="animation-delay: 2s"
             >
-              <span class="text-primary-950 font-bold text-sm md:text-base whitespace-nowrap pl-2">
+              <span
+                class="text-primary-950 font-bold text-xs md:text-sm whitespace-nowrap pl-1 md:pl-2"
+              >
                 {{ 'cta.badge2' | translate }}
               </span>
-              <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center">
-                <span class="material-icons text-primary-600 text-sm">touch_app</span>
+              <div
+                class="w-6 h-6 md:w-8 md:h-8 bg-primary-100 rounded-lg flex items-center justify-center"
+              >
+                <span class="material-icons text-primary-600 text-xs md:text-sm">touch_app</span>
               </div>
             </div>
 
             <!-- Floating Badge 3 (Top Right) -->
             <div
-              class="absolute top-8 -right-12 md:-right-20 bg-white rounded-xl p-3 shadow-lg flex items-center gap-3 animate-pop-cycle"
+              class="absolute top-6 -right-1 md:-right-20 bg-white rounded-xl p-2 md:p-3 shadow-lg flex items-center gap-2 md:gap-3 animate-pop-cycle"
               style="animation-delay: 4s"
             >
-              <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center">
-                <span class="material-icons text-primary-600 text-sm">savings</span>
+              <div
+                class="w-6 h-6 md:w-8 md:h-8 bg-primary-100 rounded-lg flex items-center justify-center"
+              >
+                <span class="material-icons text-primary-600 text-xs md:text-sm">savings</span>
               </div>
-              <span class="text-primary-950 font-bold text-sm md:text-base whitespace-nowrap">
+              <span class="text-primary-950 font-bold text-xs md:text-sm whitespace-nowrap">
                 {{ 'cta.badge3' | translate }}
               </span>
             </div>
 
             <!-- Floating Badge 4 (Bottom Left) -->
             <div
-              class="absolute bottom-12 -left-8 md:-left-12 bg-white rounded-xl p-3 shadow-lg flex items-center gap-3 animate-pop-cycle"
+              class="absolute bottom-8 -left-4 md:-left-12 bg-white rounded-xl p-2 md:p-3 shadow-lg flex items-center gap-2 md:gap-3 animate-pop-cycle"
               style="animation-delay: 6s"
             >
-              <span class="text-primary-950 font-bold text-sm md:text-base whitespace-nowrap pl-2">
+              <span
+                class="text-primary-950 font-bold text-xs md:text-sm whitespace-nowrap pl-1 md:pl-2"
+              >
                 {{ 'cta.badge4' | translate }}
               </span>
-              <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center">
-                <span class="material-icons text-primary-600 text-sm">security</span>
+              <div
+                class="w-6 h-6 md:w-8 md:h-8 bg-primary-100 rounded-lg flex items-center justify-center"
+              >
+                <span class="material-icons text-primary-600 text-xs md:text-sm">security</span>
               </div>
             </div>
 
             <!-- Floating Badge 5 (Middle Right) -->
             <div
-              class="absolute top-1/2 -right-16 md:-right-24 bg-white rounded-xl p-3 shadow-lg flex items-center gap-3 animate-pop-cycle"
+              class="absolute top-1/2 -right-12 md:-right-24 bg-white rounded-xl p-2 md:p-3 shadow-lg flex items-center gap-2 md:gap-3 animate-pop-cycle"
               style="animation-delay: 8s"
             >
-              <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center">
-                <span class="material-icons text-primary-600 text-sm">money_off</span>
+              <div
+                class="w-6 h-6 md:w-8 md:h-8 bg-primary-100 rounded-lg flex items-center justify-center"
+              >
+                <span class="material-icons text-primary-600 text-xs md:text-sm">money_off</span>
               </div>
-              <span class="text-primary-950 font-bold text-sm md:text-base whitespace-nowrap">
+              <span class="text-primary-950 font-bold text-xs md:text-sm whitespace-nowrap">
                 {{ 'cta.badge5' | translate }}
               </span>
             </div>

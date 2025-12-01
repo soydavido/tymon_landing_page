@@ -61,22 +61,25 @@ export class TymonTestimonialsComponent {
   }
 
   getPositionClass(index: number): string {
+    const baseClass = 'absolute top-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out';
+    const widthClass = 'w-[260px] md:w-[350px] h-[380px] md:h-[400px]';
+
     if (index === this.currentIndex) {
-      return 'left-1/2 -translate-x-1/2 w-full md:w-1/2 z-20 opacity-100 scale-100';
+      return `${baseClass} ${widthClass} left-1/2 -translate-x-1/2 z-30 scale-100 md:scale-110 opacity-100 shadow-2xl`;
     }
 
     const prevIndex =
       this.currentIndex === 0 ? this.testimonials.length - 1 : this.currentIndex - 1;
 
     if (index === prevIndex) {
-      return 'left-0 w-1/4 z-10 opacity-100 scale-90 cursor-pointer hover:opacity-100';
+      return `${baseClass} ${widthClass} left-1/2 -translate-x-[165%] z-20 scale-90 opacity-100 cursor-pointer hover:scale-95`;
     }
 
     const nextIndex =
       this.currentIndex === this.testimonials.length - 1 ? 0 : this.currentIndex + 1;
 
     if (index === nextIndex) {
-      return 'right-0 w-1/4 z-10 opacity-100 scale-90 cursor-pointer hover:opacity-100';
+      return `${baseClass} ${widthClass} left-1/2 translate-x-[65%] z-20 scale-90 opacity-100 cursor-pointer hover:scale-95`;
     }
 
     return 'hidden';

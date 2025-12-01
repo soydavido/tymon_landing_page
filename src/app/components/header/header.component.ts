@@ -12,9 +12,16 @@ import { scrollToSection } from '../../utils/scroll.utils';
   styleUrls: [],
 })
 export class HeaderComponent {
+  isMobileMenuOpen = false;
+
   constructor(protected configService: AppConfigService) {}
 
   scrollToSection(sectionId: string) {
+    this.isMobileMenuOpen = false;
     scrollToSection(sectionId);
+  }
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
 }
