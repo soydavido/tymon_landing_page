@@ -19,7 +19,25 @@
       media="(prefers-color-scheme: dark)"
     />
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="environments.json" as="fetch" crossorigin="anonymous" />
+    <link rel="preload" href="i18n/es.json" as="fetch" crossorigin="anonymous" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
   </head>
   <body>
     <app-root></app-root>
