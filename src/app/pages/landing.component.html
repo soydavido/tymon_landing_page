@@ -17,71 +17,133 @@
     <main>
       <app-title-section id="home" />
 
-      @defer (on viewport) {
-      <app-ia-proyection-chart id="ia-projection" />
-      } @placeholder {
-      <div class="min-h-[600px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-steps-functionality id="steps" />
-      } @placeholder {
-      <div class="min-h-[800px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-differentiators id="differentiators" />
-      } @placeholder {
-      <div class="min-h-[600px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-cta id="cta" />
-      } @placeholder {
-      <div class="min-h-[400px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-financial-control id="financial-control" />
-      } @placeholder {
-      <div class="min-h-[600px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-multi-device id="multi-device" />
-      } @placeholder {
-      <div class="min-h-[600px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-manage-finances id="manage-finances" />
-      } @placeholder {
-      <div class="min-h-[600px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-key-modules id="key-modules" />
-      } @placeholder {
-      <div class="min-h-[600px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-expense-income-evolution id="features" />
-      } @placeholder {
-      <div class="min-h-[600px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-testimonials id="testimonials" />
-      } @placeholder {
-      <div class="min-h-[600px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-price-plans id="pricing" />
-      } @placeholder {
-      <div class="min-h-[800px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-faq id="faq" />
-      } @placeholder {
-      <div class="min-h-[600px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-request-demo id="request-demo" />
-      } @placeholder {
-      <div class="min-h-[500px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-contact-us id="contact-us" />
-      } @placeholder {
-      <div class="min-h-[500px] w-full"></div>
-      } @defer (on viewport) {
-      <app-tymon-download-app id="download-app" />
-      } @placeholder {
-      <div class="min-h-[400px] w-full"></div>
-      } @defer (on viewport) {
-      <app-footer id="footer" />
-      } @placeholder {
-      <div class="min-h-[300px] w-full"></div>
-      }
+      <div id="ia-projection">
+        @defer (on viewport) {
+        <app-ia-proyection-chart />
+        } @placeholder {
+        <div class="min-h-[600px] w-full"></div>
+        }
+      </div>
+
+      <div id="steps">
+        @defer (on viewport) {
+        <app-tymon-steps-functionality />
+        } @placeholder {
+        <div class="min-h-[800px] w-full"></div>
+        }
+      </div>
+
+      <div id="differentiators">
+        @defer (on viewport) {
+        <app-tymon-differentiators />
+        } @placeholder {
+        <div class="min-h-[600px] w-full"></div>
+        }
+      </div>
+
+      <div id="cta">
+        @defer (on viewport) {
+        <app-tymon-cta />
+        } @placeholder {
+        <div class="min-h-[400px] w-full"></div>
+        }
+      </div>
+
+      <div id="financial-control">
+        @defer (on viewport) {
+        <app-tymon-financial-control />
+        } @placeholder {
+        <div class="min-h-[600px] w-full"></div>
+        }
+      </div>
+
+      <div id="multi-device">
+        @defer (on viewport) {
+        <app-tymon-multi-device />
+        } @placeholder {
+        <div class="min-h-[600px] w-full"></div>
+        }
+      </div>
+
+      <div id="manage-finances">
+        @defer (on viewport) {
+        <app-tymon-manage-finances />
+        } @placeholder {
+        <div class="min-h-[600px] w-full"></div>
+        }
+      </div>
+
+      <div id="key-modules">
+        @defer (on viewport) {
+        <app-tymon-key-modules />
+        } @placeholder {
+        <div class="min-h-[600px] w-full"></div>
+        }
+      </div>
+
+      <div id="features">
+        @defer (on viewport) {
+        <app-tymon-expense-income-evolution />
+        } @placeholder {
+        <div class="min-h-[600px] w-full"></div>
+        }
+      </div>
+
+      <div id="testimonials">
+        @defer (on viewport) {
+        <app-tymon-testimonials />
+        } @placeholder {
+        <div class="min-h-[600px] w-full"></div>
+        }
+      </div>
+
+      <div id="pricing">
+        @defer (on viewport) {
+        <app-tymon-price-plans />
+        } @placeholder {
+        <div class="min-h-[800px] w-full"></div>
+        }
+      </div>
+
+      <div id="faq">
+        @defer (on viewport) {
+        <app-tymon-faq />
+        } @placeholder {
+        <div class="min-h-[600px] w-full"></div>
+        }
+      </div>
+
+      <div id="request-demo">
+        @defer (on viewport) {
+        <app-tymon-request-demo />
+        } @placeholder {
+        <div class="min-h-[500px] w-full"></div>
+        }
+      </div>
+
+      <div id="contact-us">
+        @defer (on viewport) {
+        <app-tymon-contact-us />
+        } @placeholder {
+        <div class="min-h-[500px] w-full"></div>
+        }
+      </div>
+
+      <div id="download-app">
+        @defer (on viewport) {
+        <app-tymon-download-app />
+        } @placeholder {
+        <div class="min-h-[400px] w-full"></div>
+        }
+      </div>
+
+      <div id="footer">
+        @defer (on viewport) {
+        <app-footer />
+        } @placeholder {
+        <div class="min-h-[300px] w-full"></div>
+        }
+      </div>
     </main>
   </div>
 
